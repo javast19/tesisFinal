@@ -34,6 +34,12 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         Continuar = new javax.swing.JButton();
         descripcion = new javax.swing.JLabel();
         salir = new javax.swing.JButton();
+        descripcion1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         panelTutorial1 = new javax.swing.JPanel();
         siguiente = new javax.swing.JButton();
         atras = new javax.swing.JButton();
@@ -58,54 +64,106 @@ public class TutorialPrincipal extends javax.swing.JFrame {
 
         Continuar.setText("Continuar");
 
-        descripcion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         descripcion.setLabelFor(titulo);
-        descripcion.setText("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. A continuacion encontrara el tutorial de como usar el aplicativo, como hacer un analisis y como visualizar su modelo.");
+        descripcion.setText("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. ");
+        descripcion.setAutoscrolls(true);
+        descripcion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        descripcion.setDebugGraphicsOptions(javax.swing.DebugGraphics.LOG_OPTION);
+        descripcion.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
         salir.setText("Salir");
+
+        descripcion1.setLabelFor(titulo);
+        descripcion1.setText("A continuacion encontrara el tutorial de como usar el aplicativo.");
+        descripcion1.setAutoscrolls(true);
+        descripcion1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        descripcion1.setDebugGraphicsOptions(javax.swing.DebugGraphics.LOG_OPTION);
+        descripcion1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+
+        jLabel1.setText("Como hacer un analisis y como visualizar su modelo.");
+
+        jLabel2.setText("Investigadores:");
+
+        jLabel3.setText("Luis Carlos Tovar Garrido.");
+
+        jLabel4.setText("Javier David Castillo Beltrán.");
+
+        jLabel5.setText("Daniel Andres Orozoco Méndez.");
 
         javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
         panelPrincipal.setLayout(panelPrincipalLayout);
         panelPrincipalLayout.setHorizontalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(titulo)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(salir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(skipTutorial))
+                        .addComponent(skipTutorial)
+                        .addGap(18, 18, 18)
+                        .addComponent(Continuar))
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addGap(0, 72, Short.MAX_VALUE)
-                        .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(Continuar)
+                        .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                .addGap(97, 97, 97)
+                                .addComponent(descripcion1))
+                            .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                .addGap(125, 125, 125)
+                                .addComponent(jLabel1)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addGap(169, 169, 169)
-                .addComponent(EscudoUDC)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addGap(182, 182, 182)
-                .addComponent(titulo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(51, 51, 51)
+                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(40, 40, 40)
+                        .addComponent(EscudoUDC))
+                    .addComponent(descripcion))
+                .addGap(0, 51, Short.MAX_VALUE))
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(titulo)
-                .addGap(18, 18, 18)
-                .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addComponent(EscudoUDC)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descripcion1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(EscudoUDC)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)
+                        .addGap(40, 40, 40)))
                 .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Continuar)
                     .addComponent(skipTutorial)
                     .addComponent(salir))
                 .addContainerGap())
         );
+
+        descripcion.getAccessibleContext().setAccessibleDescription("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. A continuacion encontrara el tutorial de como usar el aplicativo, como hacer un analisis y como visualizar su modelo.");
 
         siguiente.setText("Siguiente");
 
@@ -199,6 +257,12 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel EscudoUDC;
     private javax.swing.JButton atras;
     private javax.swing.JLabel descripcion;
+    private javax.swing.JLabel descripcion1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel panelPrincipal;
     private javax.swing.JPanel panelTutorial1;
     private javax.swing.JButton salir;
