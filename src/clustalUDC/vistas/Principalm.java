@@ -77,10 +77,10 @@ public class Principalm extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, 
                             "La Proteina ingresada no cumple con el estandar."
                                     + "\nEste error puede ocurrir por una extencion no valida "
-                                    + "\no por escribir mal la secuencia de la proteina."
-                            + "\n\n Por favor revisar cual es la forma correcta de ingresar el archivo de proteina\n"
+                                    + "o por escribir mal la secuencia de la proteina."
+                            + "\n\nPor favor revisar cual es la forma correcta de ingresar el archivo de proteina\n"
                             + "en la documentacion del software."
-                            + "\nEj: \nSe eseraba un CGG GTC CTA. \nSe encontró MEEPQSDPSVEPPLSQETFSDLWK",
+                            + "\nSe esperaba una secuencia \"CGG GTC CTA...\"",
                             "Error al cargar Proteina", JOptionPane.ERROR_MESSAGE);
 
                 }
