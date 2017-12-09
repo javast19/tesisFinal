@@ -76,7 +76,7 @@ public class Principalm extends javax.swing.JFrame {
                     accionMenu.setEnabled(false);
                     JOptionPane.showMessageDialog(null, 
                             "La Proteina ingresada no cumple con el estandar."
-                                    + "\nEste error puede ocurrir por una extencion no valida "
+                                    + "\nEste error puede ocurrir por una extención no válida "
                                     + "o por escribir mal la secuencia de la proteina."
                             + "\n\nPor favor revisar cual es la forma correcta de ingresar el archivo de proteina\n"
                             + "en la documentacion del software."
@@ -210,14 +210,14 @@ public class Principalm extends javax.swing.JFrame {
         for (String[] info : matrizTempX) {
             if(!info[4].equals(info[3]))
               informeMutacion =
-                        "Se halla mutacion en el codon " + info[2] + "\n" 
-                        + " El aminoacido en la posicion " + ((parseInt(info[2]) / 3) + 1)
+                        "Se halla mutacion en el codón " + info[2] + "\n" 
+                        + "El aminoácido en la posición " + ((parseInt(info[2]) / 3) + 1)
                         + " ha mutado"
                         + ": " + info[0] + " -> " + info[1] + ". \n"
-                        + "Aminoacido mutado: "+info[3]+" -> "+ info[4] +"\n";
+                        + "Aminoácido mutado: "+info[3]+" -> "+ info[4] +"\n";
             else
-               informeMutacion = "Se halla mutacion en el codon " +info[2] + "\n"
-                        + " El aminoacido en la posicion "+ ((parseInt(info[2])/3)+1) 
+               informeMutacion = "Se halla mutación en el codón " +info[2] + "\n"
+                        + " El aminoácido en la posición "+ ((parseInt(info[2])/3)+1) 
                         + " \nNO ha cambiado. "+info[4]+"->"+info[3]+"\n";
         }
         abrirInforme(informeMutacion);
