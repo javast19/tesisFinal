@@ -191,21 +191,23 @@ public class Principalm extends javax.swing.JFrame {
                                 + "parece haber ingresado la proteina en estado normal. "
                                 + "\n");
         }
+        String informeMutacion ="";
         for (String[] info : matrizTempX) {
             if(!info[4].equals(info[3]))
-                jTextArea4.append(
-                        "Se halla mutacion en el codon " + info[2]
+              informeMutacion =
+                        "Se halla mutacion en el codon " + info[2] + "\n" 
                         + " El aminoacido en la posicion " + ((parseInt(info[2]) / 3) + 1)
                         + " ha mutado"
-                        + ": " + info[0] + " -> " + info[1] + ", "
-                        + "Aminoacido mutado: "+info[3]+" -> "+ info[4] +"\n");
+                        + ": " + info[0] + " -> " + info[1] + ". \n"
+                        + "Aminoacido mutado: "+info[3]+" -> "+ info[4] +"\n";
             else
-                jTextArea4.append("Se halla mutacion en el codon " +info[2]
+               informeMutacion = "Se halla mutacion en el codon " +info[2] + "\n"
                         + " El aminoacido en la posicion "+ ((parseInt(info[2])/3)+1) 
-                        + " NO ha cambiado. "+info[4]+"->"+info[3]+"\n");
+                        + " \nNO ha cambiado. "+info[4]+"->"+info[3]+"\n";
         }
-        abrirInforme();
+        abrirInforme(informeMutacion);
         
+        jTextArea4.append(informeMutacion);
         jTextArea4.append("\n\n");
         String otroAux = "";
         for (int i = 0; i < strNormal.length(); i = i+3) {
@@ -381,8 +383,8 @@ public class Principalm extends javax.swing.JFrame {
                 + "                       Daniel Andres Orozco Mendez\n", "About", JOptionPane.INFORMATION_MESSAGE);
     }
     
-    private void abrirInforme() {
-        JOptionPane.showMessageDialog(null,"hola ke ace", "About", JOptionPane.PLAIN_MESSAGE);
+    private void abrirInforme(String mensaje) {
+        JOptionPane.showMessageDialog(null, mensaje, "Informe de Analisis", JOptionPane.PLAIN_MESSAGE);
     }
     
     
