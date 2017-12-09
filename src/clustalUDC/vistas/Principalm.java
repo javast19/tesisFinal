@@ -199,25 +199,25 @@ public class Principalm extends javax.swing.JFrame {
         
         contadorArchivo++;
         String informeMutacion ="";
-        jTextArea4.append("Archivo numero "+contadorArchivo+"\n");
+        jTextArea4.append("Archivo número "+contadorArchivo+"\n");
         if(matrizTempX.length == 0){
             informeMutacion =
-                        "No se halla ninguna mutacion en el analisis "
-                                + "parece haber ingresado la proteina en estado normal. "
+                        "No se halla ninguna mutación en el análisis "
+                                + "parece haber ingresado la proteína en estado normal. "
                                 + "\n";
         }
         
         for (String[] info : matrizTempX) {
             if(!info[4].equals(info[3]))
               informeMutacion =
-                        "Se halla mutacion en el codón " + info[2] + "\n" 
-                        + "El aminoácido en la posición " + ((parseInt(info[2]) / 3) + 1)
+                        "Se halla mutación en la posición " + info[2] + "\n" 
+                        + "El aminoácido del codón " + ((parseInt(info[2]) / 3) + 1)
                         + " ha mutado"
                         + ": " + info[0] + " -> " + info[1] + ". \n"
                         + "Aminoácido mutado: "+info[3]+" -> "+ info[4] +"\n";
             else
-               informeMutacion = "Se halla mutación en el codón " +info[2] + "\n"
-                        + " El aminoácido en la posición "+ ((parseInt(info[2])/3)+1) 
+               informeMutacion = "Se halla mutación en la posición " +info[2] + "\n"
+                        + " El aminoácido del codón "+ ((parseInt(info[2])/3)+1) 
                         + " \nNO ha cambiado. "+info[4]+"->"+info[3]+"\n";
         }
         abrirInforme(informeMutacion);
