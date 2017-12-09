@@ -393,9 +393,9 @@ public class Principalm extends javax.swing.JFrame {
 "especifico y posteriormente graficar en un modelo 3D \n" +
 "la estructura de la proteína mutada.\n\n"
                 + "Grupo de investigación:  GIMATICA.\n\n"
-                + "Investigadores: Luis Carlos Tovar Garrido\n"
-                + "                       Javier David Castillo Beltrán\n"
-                + "                       Daniel Andres Orozco Mendez\n", "About", JOptionPane.INFORMATION_MESSAGE);
+                + "Investigadores:\nLuis Carlos Tovar Garrido\n"
+                + "Javier David Castillo Beltrán\n"
+                + "Daniel Andres Orozco Mendez\n", "About", JOptionPane.INFORMATION_MESSAGE);
     }
     
     private void abrirInforme(String mensaje) {
@@ -548,7 +548,7 @@ public class Principalm extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea1);
 
         jTextArea2.setEditable(false);
-        jTextArea2.setBackground(new java.awt.Color(214, 217, 223));
+        jTextArea2.setBackground(new java.awt.Color(240, 240, 240));
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Lucida Console", 0, 13)); // NOI18N
         jTextArea2.setRows(5);
