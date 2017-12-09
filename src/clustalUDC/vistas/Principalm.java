@@ -68,13 +68,26 @@ public class Principalm extends javax.swing.JFrame {
                     
                 }
                 
-                String strFasta = analizarFasta(b);
-                jTextArea2.append("\n"+conf +"\n");
-                //visualizarFasta(strFasta,conf);
-                
+                if(verificarProteina(b)) {
+                    String strFasta = analizarFasta(b);
+                    jTextArea2.append("\n" + conf + "\n");
+                } else {
+
+                    accionMenu.setEnabled(false);
+                    JOptionPane.showMessageDialog(null, 
+                            "La Proteina ingresada no cumple con el estandar."
+                                    + "\nEste error puede ocurrir por una extencion no valida "
+                                    + "\no por escribir mal la secuencia de la proteina."
+                            + "\n\n Por favor revisar cual es la forma correcta de ingresar el archivo de proteina\n"
+                            + "en la documentacion del software."
+                            + "\nEj: \nSe eseraba un CGG GTC CTA. \nSe encontró MEEPQSDPSVEPPLSQETFSDLWK",
+                            "Error al cargar Proteina", JOptionPane.ERROR_MESSAGE);
+
+                }
+
             }
-            
-            
+
+
             
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
@@ -386,9 +399,24 @@ public class Principalm extends javax.swing.JFrame {
     }
     
     private void abrirInforme(String mensaje) {
-        JOptionPane.showMessageDialog(null, mensaje, "Informe de Analisis", JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null, mensaje, "Informe de Analisis", JOptionPane.INFORMATION_MESSAGE);
     }
     
+    private boolean verificarProteina(String b) {
+        b =b.replaceAll(" ", "");
+        b = b.toUpperCase();
+        if(b.contains("M") || b.contains("E") || b.contains("P") || b.contains("Q") 
+                || b.contains("S") || b.contains("S") || b.contains("D") || 
+                 b.contains("V") || b.contains("L") || b.contains("H") || 
+                 b.contains("F") || b.contains("W") || b.contains("K") ||
+                 b.contains("N") || b.contains("I") || b.contains("R") ||
+                 b.contains("Y") || b.contains("Q") || b.contains("P") ||
+                b.isEmpty() || b.trim().length()%3 != 0){
+            return false;
+        }
+        return true;
+    
+    }
     
     public void visualizarFasta(String strFasta, String conf){
         
