@@ -792,7 +792,6 @@ public class Principalm extends javax.swing.JFrame {
         catch(Exception e){
             JOptionPane.showMessageDialog(null, "Problemas al cargar el manual de usuario:\n\n"+e);
         }
-        JOptionPane.showMessageDialog(null, jTextArea1.getScrollableUnitIncrement(visibleRect, PROPERTIES, codon).toString());
     }//GEN-LAST:event_ayudaDocActionPerformed
 
     /**
