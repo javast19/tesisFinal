@@ -498,6 +498,7 @@ public class Principalm extends javax.swing.JFrame {
         jMenuItem6 = new javax.swing.JMenuItem();
         ayudaMenu = new javax.swing.JMenu();
         ayudaDoc = new javax.swing.JMenuItem();
+        tutorial = new javax.swing.JMenuItem();
         about = new javax.swing.JMenuItem();
 
         jMenuItem2.setText("jMenuItem2");
@@ -635,6 +636,9 @@ public class Principalm extends javax.swing.JFrame {
 
         ayudaDoc.setText("Manual de Usuario");
         ayudaMenu.add(ayudaDoc);
+
+        tutorial.setText("Abrir Tutorial");
+        ayudaMenu.add(tutorial);
 
         about.setText("About");
         about.addActionListener(new java.awt.event.ActionListener() {
@@ -839,6 +843,7 @@ public class Principalm extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JMenuItem tutorial;
     // End of variables declaration//GEN-END:variables
 
     

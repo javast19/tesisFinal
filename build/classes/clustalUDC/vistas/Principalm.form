@@ -81,6 +81,11 @@
                 <Property name="text" type="java.lang.String" value="Manual de Usuario"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="tutorial">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir Tutorial"/>
+              </Properties>
+            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="about">
               <Properties>
                 <Property name="text" type="java.lang.String" value="About"/>
