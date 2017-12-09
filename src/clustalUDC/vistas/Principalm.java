@@ -254,63 +254,63 @@ public class Principalm extends javax.swing.JFrame {
     public String onChangeBaseNToAminoacid(String entrada){
                 
         String cadenaModificada = entrada;
-        cadenaModificada = cadenaModificada.replaceAll("GCT", "Alanina");
-        cadenaModificada = cadenaModificada.replaceAll("GCC", "Alanina");
-        cadenaModificada = cadenaModificada.replaceAll("GCG", "Alanina");
-        cadenaModificada = cadenaModificada.replaceAll("GCA", "Alanina");
-        cadenaModificada = cadenaModificada.replaceAll("CGT", "Arginina");
-        cadenaModificada = cadenaModificada.replaceAll("CGC", "Arginina");
-        cadenaModificada = cadenaModificada.replaceAll("CGG", "Arginina");
-        cadenaModificada = cadenaModificada.replaceAll("CGA", "Arginina");
-        cadenaModificada = cadenaModificada.replaceAll("AGA", "Arginina");
-        cadenaModificada = cadenaModificada.replaceAll("AGG", "Arginina");
-        cadenaModificada = cadenaModificada.replaceAll("AAC", "Asparagina");
-        cadenaModificada = cadenaModificada.replaceAll("AAT", "Asparagina");
-        cadenaModificada = cadenaModificada.replaceAll("GAC", "Aspartato");
-        cadenaModificada = cadenaModificada.replaceAll("GAT", "Aspartato");
-        cadenaModificada = cadenaModificada.replaceAll("TGC", "Cisteina");
-        cadenaModificada = cadenaModificada.replaceAll("TGT", "Cisteina");
-        cadenaModificada = cadenaModificada.replaceAll("GAA", "Glutamato");
-        cadenaModificada = cadenaModificada.replaceAll("GAG", "Glutamato");
-        cadenaModificada = cadenaModificada.replaceAll("CAG", "Glutamina");
-        cadenaModificada = cadenaModificada.replaceAll("CAA", "Glutamina");
-        cadenaModificada = cadenaModificada.replaceAll("GGT", "Glicina");
-        cadenaModificada = cadenaModificada.replaceAll("GGC", "Glicina");
-        cadenaModificada = cadenaModificada.replaceAll("GGG", "Glicina");
-        cadenaModificada = cadenaModificada.replaceAll("GGA", "Glicina");
-        cadenaModificada = cadenaModificada.replaceAll("CAT", "Histidina");
-        cadenaModificada = cadenaModificada.replaceAll("CAC", "Histidina");
-        cadenaModificada = cadenaModificada.replaceAll("ATC", "Isoleucina");
-        cadenaModificada = cadenaModificada.replaceAll("ATT", "Isoleucina");
-        cadenaModificada = cadenaModificada.replaceAll("CTG", "Leucina");
-        cadenaModificada = cadenaModificada.replaceAll("CTA", "Leucina");
-        cadenaModificada = cadenaModificada.replaceAll("CTT", "Leucina");
-        cadenaModificada = cadenaModificada.replaceAll("CTC", "Leucina");
-        cadenaModificada = cadenaModificada.replaceAll("TTG", "Leucina");
-        cadenaModificada = cadenaModificada.replaceAll("AAG", "Lisina");
-        cadenaModificada = cadenaModificada.replaceAll("AAA", "Lisina");
-        cadenaModificada = cadenaModificada.replaceAll("ATG", "Metionina");
-        cadenaModificada = cadenaModificada.replaceAll("TTC", "Fenilalanina");
-        cadenaModificada = cadenaModificada.replaceAll("TTT", "Fenilalanina");
-        cadenaModificada = cadenaModificada.replaceAll("CCT", "Prolina");
-        cadenaModificada = cadenaModificada.replaceAll("CCG", "Prolina");
-        cadenaModificada = cadenaModificada.replaceAll("CCA", "Prolina");
-        cadenaModificada = cadenaModificada.replaceAll("CCC", "Prolina");
-        cadenaModificada = cadenaModificada.replaceAll("TCA", "Serina");
-        cadenaModificada = cadenaModificada.replaceAll("AGC", "Serina");
-        cadenaModificada = cadenaModificada.replaceAll("AGT", "Serina");
-        cadenaModificada = cadenaModificada.replaceAll("TCC", "Serina");
-        cadenaModificada = cadenaModificada.replaceAll("TCT", "Serina");
-        cadenaModificada = cadenaModificada.replaceAll("ACG", "Serina");
-        cadenaModificada = cadenaModificada.replaceAll("ACC", "Treonina");
-        cadenaModificada = cadenaModificada.replaceAll("ACA", "Treonina");
-        cadenaModificada = cadenaModificada.replaceAll("ACT", "Treonina");
-        cadenaModificada = cadenaModificada.replaceAll("TGG", "Triptofano");
-        cadenaModificada = cadenaModificada.replaceAll("TAC", "Tirosina");
-        cadenaModificada = cadenaModificada.replaceAll("TAT", "Tirosina");
-        cadenaModificada = cadenaModificada.replaceAll("GTG", "Valina");
-        cadenaModificada = cadenaModificada.replaceAll("GTC", "Valina");
-        cadenaModificada = cadenaModificada.replaceAll("GTT", "Valina");
+        cadenaModificada = cadenaModificada.replaceAll("GCT", "Alanina (A)");
+        cadenaModificada = cadenaModificada.replaceAll("GCC", "Alanina (A)");
+        cadenaModificada = cadenaModificada.replaceAll("GCG", "Alanina (A)");
+        cadenaModificada = cadenaModificada.replaceAll("GCA", "Alanina (A)");
+        cadenaModificada = cadenaModificada.replaceAll("CGT", "Arginina (R)");
+        cadenaModificada = cadenaModificada.replaceAll("CGC", "Arginina (R)");
+        cadenaModificada = cadenaModificada.replaceAll("CGG", "Arginina (R)");
+        cadenaModificada = cadenaModificada.replaceAll("CGA", "Arginina (R)");
+        cadenaModificada = cadenaModificada.replaceAll("AGA", "Arginina (R)");
+        cadenaModificada = cadenaModificada.replaceAll("AGG", "Arginina (R)");
+        cadenaModificada = cadenaModificada.replaceAll("AAC", "Asparagina (N)");
+        cadenaModificada = cadenaModificada.replaceAll("AAT", "Asparagina (N)");
+        cadenaModificada = cadenaModificada.replaceAll("GAC", "Aspartato (D)");
+        cadenaModificada = cadenaModificada.replaceAll("GAT", "Aspartato (D)");
+        cadenaModificada = cadenaModificada.replaceAll("TGC", "Cisteina (C)");
+        cadenaModificada = cadenaModificada.replaceAll("TGT", "Cisteina (C)");
+        cadenaModificada = cadenaModificada.replaceAll("GAA", "Glutamato (E)");
+        cadenaModificada = cadenaModificada.replaceAll("GAG", "Glutamato (E)");
+        cadenaModificada = cadenaModificada.replaceAll("CAG", "Glutamina (Q)");
+        cadenaModificada = cadenaModificada.replaceAll("CAA", "Glutamina (Q)");
+        cadenaModificada = cadenaModificada.replaceAll("GGT", "Glicina (G)");
+        cadenaModificada = cadenaModificada.replaceAll("GGC", "Glicina (G)");
+        cadenaModificada = cadenaModificada.replaceAll("GGG", "Glicina (G)");
+        cadenaModificada = cadenaModificada.replaceAll("GGA", "Glicina (G)");
+        cadenaModificada = cadenaModificada.replaceAll("CAT", "Histidina (H)");
+        cadenaModificada = cadenaModificada.replaceAll("CAC", "Histidina (H)");
+        cadenaModificada = cadenaModificada.replaceAll("ATC", "Isoleucina (I)");
+        cadenaModificada = cadenaModificada.replaceAll("ATT", "Isoleucina (I)");
+        cadenaModificada = cadenaModificada.replaceAll("CTG", "Leucina (L)");
+        cadenaModificada = cadenaModificada.replaceAll("CTA", "Leucina (L)");
+        cadenaModificada = cadenaModificada.replaceAll("CTT", "Leucina (L)");
+        cadenaModificada = cadenaModificada.replaceAll("CTC", "Leucina (L)");
+        cadenaModificada = cadenaModificada.replaceAll("TTG", "Leucina (L)");
+        cadenaModificada = cadenaModificada.replaceAll("AAG", "Lisina (K)");
+        cadenaModificada = cadenaModificada.replaceAll("AAA", "Lisina (K)");
+        cadenaModificada = cadenaModificada.replaceAll("ATG", "Metionina (M)");
+        cadenaModificada = cadenaModificada.replaceAll("TTC", "Fenilalanina (F)");
+        cadenaModificada = cadenaModificada.replaceAll("TTT", "Fenilalanina (F)");
+        cadenaModificada = cadenaModificada.replaceAll("CCT", "Prolina (P)");
+        cadenaModificada = cadenaModificada.replaceAll("CCG", "Prolina (P)");
+        cadenaModificada = cadenaModificada.replaceAll("CCA", "Prolina (P)");
+        cadenaModificada = cadenaModificada.replaceAll("CCC", "Prolina (P)");
+        cadenaModificada = cadenaModificada.replaceAll("TCA", "Serina (S)");
+        cadenaModificada = cadenaModificada.replaceAll("AGC", "Serina (S)");
+        cadenaModificada = cadenaModificada.replaceAll("AGT", "Serina (S)");
+        cadenaModificada = cadenaModificada.replaceAll("TCC", "Serina (S)");
+        cadenaModificada = cadenaModificada.replaceAll("TCT", "Serina (S)");
+        cadenaModificada = cadenaModificada.replaceAll("ACG", "Serina (S)");
+        cadenaModificada = cadenaModificada.replaceAll("ACC", "Treonina (T)");
+        cadenaModificada = cadenaModificada.replaceAll("ACA", "Treonina (T)");
+        cadenaModificada = cadenaModificada.replaceAll("ACT", "Treonina (T)");
+        cadenaModificada = cadenaModificada.replaceAll("TGG", "Triptofano (W)");
+        cadenaModificada = cadenaModificada.replaceAll("TAC", "Tirosina (Y)");
+        cadenaModificada = cadenaModificada.replaceAll("TAT", "Tirosina (Y)");
+        cadenaModificada = cadenaModificada.replaceAll("GTG", "Valina (V)");
+        cadenaModificada = cadenaModificada.replaceAll("GTC", "Valina (V)");
+        cadenaModificada = cadenaModificada.replaceAll("GTT", "Valina (V)");
         cadenaModificada = cadenaModificada.replaceAll("TGA", "Terminacion"); // codon de terminacion
   
 
@@ -644,6 +644,11 @@ public class Principalm extends javax.swing.JFrame {
         ayudaMenu.add(ayudaDoc);
 
         tutorial.setText("Abrir Tutorial");
+        tutorial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tutorialActionPerformed(evt);
+            }
+        });
         ayudaMenu.add(tutorial);
 
         about.setText("About");
@@ -787,6 +792,10 @@ public class Principalm extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Problemas al cargar el manual de usuario:\n\n"+e);
         }
     }//GEN-LAST:event_ayudaDocActionPerformed
+
+    private void tutorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tutorialActionPerformed
 
     /**
      * @param args the command line arguments
