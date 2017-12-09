@@ -1,0 +1,208 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package clustalUDC.vistas;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.util.ArrayList;
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+
+/**
+ *
+ * @author Home
+ */
+public class FilterConfig extends javax.swing.JFrame {
+
+    /**
+     * Creates new form FilterConfig
+     */
+    private ArrayList<ArrayList<Boolean>> filterConfigArray;
+    private ArrayList<ArrayList<String>> filterConfigArrayString;
+    private boolean changeVal;
+
+    public void setChangeVal(boolean changeVal) {
+        this.changeVal = changeVal;
+    }
+
+    public boolean isChangeVal() {
+        return changeVal;
+    }
+    
+    /**
+     * @return the filterConfigArray
+     */
+    public ArrayList<ArrayList<Boolean>> getFilterConfigArray() {
+        return filterConfigArray;
+    }
+
+    /**
+     * @param filterConfigArray the filterConfigArray to set
+     */
+    public void setFilterConfigArray(ArrayList<ArrayList<Boolean>> filterConfigArray) {
+        this.filterConfigArray = filterConfigArray;
+    }
+    /**
+     * @return the filterConfigArray
+     */
+    public ArrayList<ArrayList<String>> getFilterConfigArrayString() {
+        return filterConfigArrayString;
+    }
+
+    /**
+     * @param filterConfigArray the filterConfigArray to set
+     */
+    
+    public void setFilterConfigArrayString(ArrayList<ArrayList<String>> filterConfigArrayString) {
+        this.filterConfigArrayString = filterConfigArrayString;
+    }
+    
+    public FilterConfig(int columna, ArrayList<ArrayList<Boolean>> filterConfigArray, ArrayList<ArrayList<String>> filterConfigArrayString) {
+        this.filterConfigArray = filterConfigArray;
+        this.filterConfigArrayString = filterConfigArrayString;
+        this.changeVal=false;
+        setConfig(columna);
+    }
+
+    private void setConfig(int columna){
+        
+//        JFrame.setDefaultLookAndFeelDecorated(true);
+        JFrame frame = new JFrame("Configuracion filtro");
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+//        frame.setPreferredSize((new Dimension(500,500)));
+          
+//        
+//        JScrollPane listScroller = new JScrollPane();
+//        listScroller.setPreferredSize(new Dimension(250, 80));
+//        listScroller.setAlignmentX(LEFT_ALIGNMENT);
+//        
+//        
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setPreferredSize(new Dimension(350, 150));
+        panel.setAlignmentX(LEFT_ALIGNMENT);
+        
+//        
+//        panel.add(Box.createRigidArea(new Dimension(0,5)));
+//        panel.add(listScroller);
+//        panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+
+        int mSize = filterConfigArray.get(columna).size();
+        for (int i = 0; i < mSize; i++) {
+            
+            JCheckBox checkbox1 = new JCheckBox(filterConfigArrayString.get(columna).get(i), filterConfigArray.get(columna).get(i));
+            panel.add(checkbox1,BorderLayout.CENTER);
+            
+        }
+
+                
+        JPanel buttonPane = new JPanel();
+        buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
+        buttonPane.setBorder(BorderFactory.createEmptyBorder(0, 10, 10, 10));
+        buttonPane.add(Box.createHorizontalGlue());
+        JButton setButton = new JButton("Aceptar");
+        setButton.addActionListener((e) -> {
+            
+            ArrayList<Boolean> arrayAux= new ArrayList<>();
+            for (int i = 0; i < mSize; i++) {
+                
+                JCheckBox aux = new JCheckBox();
+                aux = (JCheckBox)panel.getComponent(i);
+                arrayAux.add(aux.isSelected());
+            }
+            this.filterConfigArray.set(columna, arrayAux);
+            System.out.println(this.filterConfigArray.toString());
+            changeVal=true;
+//            frame.setVisible(false);
+        });
+        buttonPane.add(Box.createRigidArea(new Dimension(10, 0)));
+        buttonPane.add(setButton,BorderLayout.CENTER);
+        
+        Container contentPane = getContentPane();
+        contentPane.add(panel, BorderLayout.CENTER);
+        contentPane.add(buttonPane, BorderLayout.PAGE_END);
+        frame.add(contentPane);
+        frame.pack();
+        frame.setVisible(true);
+
+        frame.setLocationRelativeTo(null);
+        
+
+//        for (int i = 0; i < filterConfigArray.get(columna).size(); i++) {
+//            
+//        }
+    }
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        setLocation(new java.awt.Point(300, 600));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(FilterConfig.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(FilterConfig.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(FilterConfig.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(FilterConfig.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new FilterConfig().setVisible(true);
+//            }
+//        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
+}
