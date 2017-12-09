@@ -31,7 +31,6 @@ public class RegistroBD extends javax.swing.JFrame {
     public RegistroBD(List cellData) {
         initComponents();
         imprimirBD(cellData);
-        jMenuBar1.setVisible(false);
 
     }
 
@@ -47,10 +46,6 @@ public class RegistroBD extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -78,24 +73,6 @@ public class RegistroBD extends javax.swing.JFrame {
         jTable1.setName("Resultado base de datos"); // NOI18N
         jScrollPane1.setViewportView(jTable1);
 
-        jMenu1.setText("Configurar filtro");
-
-        jMenu3.setText("Filtrar por");
-
-        jMenuItem2.setText("Mutation");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem2);
-
-        jMenu1.add(jMenu3);
-
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -109,48 +86,12 @@ public class RegistroBD extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        ArrayList<ArrayList<Boolean>> fa = new ArrayList<>();
-        ArrayList<ArrayList<String>> fb = new ArrayList<>();
-        ArrayList<Boolean> a = new ArrayList<>();
-        a.add(true);
-        a.add(true);
-        a.add(true);
-        a.add(true);
-        a.add(true);
-        fa.add(a);
-        ArrayList<String> b = new ArrayList<>();
-        b.add("1");
-        b.add("2");
-        b.add("3");
-        b.add("4");
-        b.add("5");
-        fb.add(b);
-        ArrayList<Boolean> aa = new ArrayList<>();
-        aa.add(false);
-        aa.add(true);
-        aa.add(true);
-        aa.add(false);
-        aa.add(true);
-        fa.add(aa);
-        ArrayList<String> ab = new ArrayList<>();
-        ab.add("AAA");
-        ab.add("AAC");
-        ab.add("AAG");
-        ab.add("AAT");
-        ab.add("ACA");
-        fb.add(ab);
-        this.filterConfigArray=fa;
-        this.filterConfigArrayString=fb;
-        filtrarPor(1);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     
 
@@ -188,22 +129,11 @@ public class RegistroBD extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 
-    
-    private void filtrarPor(int columna) {
-        FilterConfig conf = new FilterConfig(columna, this.filterConfigArray, this.filterConfigArrayString);
-        System.out.println(conf.getFilterConfigArray().get(columna).toString());
-            //conf.setVisible(true);
-        
-    }
     
   
 
