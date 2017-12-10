@@ -96,6 +96,14 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         scrollDescription7 = new javax.swing.JScrollPane();
         descriptionTutorial7 = new javax.swing.JTextArea();
         imagenTutorial7 = new javax.swing.JLabel();
+        panelTutorial8 = new javax.swing.JPanel();
+        siguiente7 = new javax.swing.JButton();
+        atras7 = new javax.swing.JButton();
+        skipTutorial9 = new javax.swing.JButton();
+        tituloTutorial8 = new javax.swing.JLabel();
+        scrollDescription8 = new javax.swing.JScrollPane();
+        descriptionTutorial8 = new javax.swing.JTextArea();
+        imagenTutorial8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -620,6 +628,63 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        siguiente7.setText("Siguiente");
+
+        atras7.setText("Atras");
+
+        skipTutorial9.setText("Saltar Tutorial");
+
+        tituloTutorial8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial8.setText("Analisis de resultados");
+
+        descriptionTutorial8.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial8.setColumns(20);
+        descriptionTutorial8.setRows(5);
+        descriptionTutorial8.setText("Luego de cargar el archivo se empieza a generar el análisis y luego que \ntermina dicho análisis un mensaje de información es mostrado en \npantalla con los detalles del análisis, así se haya presentado o no \nuna mutación.");
+        descriptionTutorial8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial8.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription8.setViewportView(descriptionTutorial8);
+
+        imagenTutorial8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Analisis-mutacion.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial8Layout = new javax.swing.GroupLayout(panelTutorial8);
+        panelTutorial8.setLayout(panelTutorial8Layout);
+        panelTutorial8Layout.setHorizontalGroup(
+            panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial8Layout.createSequentialGroup()
+                        .addComponent(skipTutorial9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente7))
+                    .addGroup(panelTutorial8Layout.createSequentialGroup()
+                        .addGroup(panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription8, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial8, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial8Layout.setVerticalGroup(
+            panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription8, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente7)
+                    .addComponent(atras7)
+                    .addComponent(skipTutorial9))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -657,6 +722,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                     .addContainerGap()
                     .addComponent(panelTutorial7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -693,6 +763,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                     .addContainerGap()
                     .addComponent(panelTutorial7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGap(56, 56, 56)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
 
         pack();
@@ -751,6 +826,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton atras4;
     private javax.swing.JButton atras5;
     private javax.swing.JButton atras6;
+    private javax.swing.JButton atras7;
     private javax.swing.JLabel descripcion;
     private javax.swing.JLabel descripcion1;
     private javax.swing.JTextArea descriptionTutorial1;
@@ -760,6 +836,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextArea descriptionTutorial5;
     private javax.swing.JTextArea descriptionTutorial6;
     private javax.swing.JTextArea descriptionTutorial7;
+    private javax.swing.JTextArea descriptionTutorial8;
     private javax.swing.JLabel imagenTutorial1;
     private javax.swing.JLabel imagenTutorial2;
     private javax.swing.JLabel imagenTutorial3;
@@ -767,6 +844,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel imagenTutorial5;
     private javax.swing.JLabel imagenTutorial6;
     private javax.swing.JLabel imagenTutorial7;
+    private javax.swing.JLabel imagenTutorial8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -780,6 +858,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel panelTutorial5;
     private javax.swing.JPanel panelTutorial6;
     private javax.swing.JPanel panelTutorial7;
+    private javax.swing.JPanel panelTutorial8;
     private javax.swing.JButton salir;
     private javax.swing.JScrollPane scrollDescription1;
     private javax.swing.JScrollPane scrollDescription2;
@@ -788,6 +867,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JScrollPane scrollDescription5;
     private javax.swing.JScrollPane scrollDescription6;
     private javax.swing.JScrollPane scrollDescription7;
+    private javax.swing.JScrollPane scrollDescription8;
     private javax.swing.JButton siguiente;
     private javax.swing.JButton siguiente1;
     private javax.swing.JButton siguiente2;
@@ -795,6 +875,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton siguiente4;
     private javax.swing.JButton siguiente5;
     private javax.swing.JButton siguiente6;
+    private javax.swing.JButton siguiente7;
     private javax.swing.JButton skipTutorial;
     private javax.swing.JButton skipTutorial2;
     private javax.swing.JButton skipTutorial3;
@@ -803,6 +884,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton skipTutorial6;
     private javax.swing.JButton skipTutorial7;
     private javax.swing.JButton skipTutorial8;
+    private javax.swing.JButton skipTutorial9;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel tituloTutorial1;
     private javax.swing.JLabel tituloTutorial2;
@@ -811,5 +893,6 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel tituloTutorial5;
     private javax.swing.JLabel tituloTutorial6;
     private javax.swing.JLabel tituloTutorial7;
+    private javax.swing.JLabel tituloTutorial8;
     // End of variables declaration//GEN-END:variables
 }
