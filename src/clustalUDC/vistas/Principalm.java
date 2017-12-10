@@ -545,6 +545,7 @@ public class Principalm extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Lucida Console", 0, 13)); // NOI18N
         jTextArea1.setRows(5);
+        jTextArea1.setToolTipText("Analisis de la proteina");
         jScrollPane2.setViewportView(jTextArea1);
 
         jTextArea2.setEditable(false);
@@ -552,7 +553,7 @@ public class Principalm extends javax.swing.JFrame {
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Lucida Console", 0, 13)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setToolTipText("");
+        jTextArea2.setToolTipText("Encabezado del archivo (Primera linea)");
         jScrollPane3.setViewportView(jTextArea2);
 
         jTextArea3.setEditable(false);
@@ -564,9 +565,11 @@ public class Principalm extends javax.swing.JFrame {
         jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
+        jTextArea4.setToolTipText("Resultados obtenidos por archivos");
         jScrollPane4.setViewportView(jTextArea4);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/escudo-unicartagena.png"))); // NOI18N
+        jLabel1.setToolTipText("Universidad de Cartagena");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("About");
