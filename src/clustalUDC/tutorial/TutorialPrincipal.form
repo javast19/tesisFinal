@@ -42,11 +42,18 @@
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
+          <Group type="103" rootIndex="4" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelTutorial4" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="panelPrincipal" alignment="0" pref="500" max="32767" attributes="0"/>
+          <Component id="panelPrincipal" alignment="0" pref="522" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Component id="panelTutorial1" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -61,6 +68,13 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="panelTutorial3" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+          <Group type="103" rootIndex="4" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelTutorial4" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -121,7 +135,7 @@
                       </Group>
                       <Component id="descripcion" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="171" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -140,7 +154,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="EscudoUDC" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="110" max="32767" attributes="0"/>
+                          <EmptySpace pref="232" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
@@ -293,7 +307,7 @@
                   <Component id="scrollDescription1" min="-2" pref="101" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="imagenTutorial1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                  <EmptySpace pref="50" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="siguiente" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="atras" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -451,7 +465,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="La secci&#xf3;n sombreada en negro es la seccion donde se muestra el analisis&#xa;de la proteina ingresada, aqui despues de cargar la proteina se refleja&#xa;el analisis realizado por el sistema mostrando las mutaciones&#xa;correspodientes a dicha proteina."/>
+                <Property name="text" type="java.lang.String" value="La secci&#xf3;n sombreada en negro es la secci&#xf3;n donde se muestra el analisis&#xa;de la proteina ingresada, aqui despues de cargar la proteina se refleja&#xa;el analisis realizado por el sistema mostrando las mutaciones&#xa;correspodientes a dicha proteina."/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
@@ -557,7 +571,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="La secci&#xf3;n sombreada en negro es la seccion donde se muestra el nombre&#xa;de la proteina ingresada, aqui despues de cargar la proteina se refleja&#xa;el nombre que viene incluido en el archivo como encabezado, esdecir,&#xa;la primera Linea del archivo cargado."/>
+                <Property name="text" type="java.lang.String" value="La secci&#xf3;n sombreada en negro es la secci&#xf3;n donde se muestra el nombre&#xa;de la proteina ingresada, aqui despues de cargar la proteina se refleja&#xa;el nombre que viene incluido en el archivo como encabezado, esdecir,&#xa;la primera Linea del archivo cargado."/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
@@ -572,6 +586,112 @@
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/clustalUDC/src/Lobby5.png"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelTutorial4">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="skipTutorial5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="atras3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="siguiente3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="scrollDescription4" alignment="0" max="32767" attributes="0"/>
+                              <Component id="tituloTutorial4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imagenTutorial4" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="tituloTutorial4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="scrollDescription4" min="-2" pref="101" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="imagenTutorial4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="siguiente3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="atras3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="skipTutorial5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="siguiente3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Siguiente"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="atras3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atras"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="skipTutorial5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Saltar Tutorial"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="tituloTutorial4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lobby"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="scrollDescription4">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="descriptionTutorial4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="f0" green="f0" red="f0" type="rgb"/>
+                </Property>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="La secci&#xf3;n sombreada en negro es la secci&#xf3;n donde se muestran los &#xa;resultados obtenidos en el analisis realizado al momento del cargue del&#xa;archivo, aqui despues de analizar la proteina se reflejan los cambios&#xa;que se obtuvieron, es decir, las mutaciones encontradas y su posici&#xf3;n."/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[190, 94]"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="imagenTutorial4">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/clustalUDC/src/Lobby6.png"/>
             </Property>
           </Properties>
         </Component>
