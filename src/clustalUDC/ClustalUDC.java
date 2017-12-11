@@ -5,6 +5,8 @@
  */
 package clustalUDC;
 
+import clustalUDC.tutorial.TutorialPrincipal;
+
 /**
  *
  * @author DANIEL OROZCO
@@ -15,9 +17,10 @@ public class ClustalUDC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        clustalUDC.vistas.Principalm a = new clustalUDC.vistas.Principalm();
-        a.setVisible(true);
-        a.setLocationRelativeTo(null); 
+        
+        clustalUDC.tutorial.TutorialPrincipal tutorial = new TutorialPrincipal();
+        tutorial.setVisible(true);
+        tutorial.setLocationRelativeTo(null);
                 
     }
     

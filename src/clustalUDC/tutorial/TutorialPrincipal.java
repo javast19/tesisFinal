@@ -5,6 +5,8 @@
  */
 package clustalUDC.tutorial;
 
+import java.awt.event.WindowEvent;
+
 /**
  *
  * @author Usuario
@@ -16,6 +18,19 @@ public class TutorialPrincipal extends javax.swing.JFrame {
      */
     public TutorialPrincipal() {
         initComponents();
+        panelTutorial1.setVisible(false);
+        panelTutorial2.setVisible(false);
+        panelTutorial3.setVisible(false);
+        panelTutorial4.setVisible(false);
+        panelTutorial5.setVisible(false);
+        panelTutorial6.setVisible(false);
+        panelTutorial7.setVisible(false);
+        panelTutorial8.setVisible(false);
+        panelTutorial9.setVisible(false);
+        panelTutorial10.setVisible(false);
+        panelTutorial11.setVisible(false);
+        panelTutorial12.setVisible(false);
+        panelTutorial13.setVisible(false);
     }
 
     /**
@@ -44,6 +59,106 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         siguiente = new javax.swing.JButton();
         atras = new javax.swing.JButton();
         skipTutorial2 = new javax.swing.JButton();
+        tituloTutorial1 = new javax.swing.JLabel();
+        scrollDescription1 = new javax.swing.JScrollPane();
+        descriptionTutorial1 = new javax.swing.JTextArea();
+        imagenTutorial1 = new javax.swing.JLabel();
+        panelTutorial2 = new javax.swing.JPanel();
+        siguiente1 = new javax.swing.JButton();
+        atras1 = new javax.swing.JButton();
+        skipTutorial3 = new javax.swing.JButton();
+        tituloTutorial2 = new javax.swing.JLabel();
+        scrollDescription2 = new javax.swing.JScrollPane();
+        descriptionTutorial2 = new javax.swing.JTextArea();
+        imagenTutorial2 = new javax.swing.JLabel();
+        panelTutorial3 = new javax.swing.JPanel();
+        siguiente2 = new javax.swing.JButton();
+        atras2 = new javax.swing.JButton();
+        skipTutorial4 = new javax.swing.JButton();
+        tituloTutorial3 = new javax.swing.JLabel();
+        scrollDescription3 = new javax.swing.JScrollPane();
+        descriptionTutorial3 = new javax.swing.JTextArea();
+        imagenTutorial3 = new javax.swing.JLabel();
+        panelTutorial4 = new javax.swing.JPanel();
+        siguiente3 = new javax.swing.JButton();
+        atras3 = new javax.swing.JButton();
+        skipTutorial5 = new javax.swing.JButton();
+        tituloTutorial4 = new javax.swing.JLabel();
+        scrollDescription4 = new javax.swing.JScrollPane();
+        descriptionTutorial4 = new javax.swing.JTextArea();
+        imagenTutorial4 = new javax.swing.JLabel();
+        panelTutorial5 = new javax.swing.JPanel();
+        siguiente4 = new javax.swing.JButton();
+        atras4 = new javax.swing.JButton();
+        skipTutorial6 = new javax.swing.JButton();
+        tituloTutorial5 = new javax.swing.JLabel();
+        scrollDescription5 = new javax.swing.JScrollPane();
+        descriptionTutorial5 = new javax.swing.JTextArea();
+        imagenTutorial5 = new javax.swing.JLabel();
+        panelTutorial6 = new javax.swing.JPanel();
+        siguiente5 = new javax.swing.JButton();
+        atras5 = new javax.swing.JButton();
+        skipTutorial7 = new javax.swing.JButton();
+        tituloTutorial6 = new javax.swing.JLabel();
+        scrollDescription6 = new javax.swing.JScrollPane();
+        descriptionTutorial6 = new javax.swing.JTextArea();
+        imagenTutorial6 = new javax.swing.JLabel();
+        panelTutorial7 = new javax.swing.JPanel();
+        siguiente6 = new javax.swing.JButton();
+        atras6 = new javax.swing.JButton();
+        skipTutorial8 = new javax.swing.JButton();
+        tituloTutorial7 = new javax.swing.JLabel();
+        scrollDescription7 = new javax.swing.JScrollPane();
+        descriptionTutorial7 = new javax.swing.JTextArea();
+        imagenTutorial7 = new javax.swing.JLabel();
+        panelTutorial8 = new javax.swing.JPanel();
+        siguiente7 = new javax.swing.JButton();
+        atras7 = new javax.swing.JButton();
+        skipTutorial9 = new javax.swing.JButton();
+        tituloTutorial8 = new javax.swing.JLabel();
+        scrollDescription8 = new javax.swing.JScrollPane();
+        descriptionTutorial8 = new javax.swing.JTextArea();
+        imagenTutorial8 = new javax.swing.JLabel();
+        panelTutorial9 = new javax.swing.JPanel();
+        siguiente8 = new javax.swing.JButton();
+        atras8 = new javax.swing.JButton();
+        skipTutorial10 = new javax.swing.JButton();
+        tituloTutorial9 = new javax.swing.JLabel();
+        scrollDescription9 = new javax.swing.JScrollPane();
+        descriptionTutorial9 = new javax.swing.JTextArea();
+        imagenTutorial9 = new javax.swing.JLabel();
+        panelTutorial10 = new javax.swing.JPanel();
+        siguiente9 = new javax.swing.JButton();
+        atras9 = new javax.swing.JButton();
+        skipTutorial11 = new javax.swing.JButton();
+        tituloTutorial10 = new javax.swing.JLabel();
+        scrollDescription10 = new javax.swing.JScrollPane();
+        descriptionTutorial10 = new javax.swing.JTextArea();
+        imagenTutorial10 = new javax.swing.JLabel();
+        panelTutorial11 = new javax.swing.JPanel();
+        siguiente10 = new javax.swing.JButton();
+        atras10 = new javax.swing.JButton();
+        skipTutorial12 = new javax.swing.JButton();
+        tituloTutorial11 = new javax.swing.JLabel();
+        scrollDescription11 = new javax.swing.JScrollPane();
+        descriptionTutorial11 = new javax.swing.JTextArea();
+        imagenTutorial11 = new javax.swing.JLabel();
+        panelTutorial12 = new javax.swing.JPanel();
+        siguiente11 = new javax.swing.JButton();
+        atras11 = new javax.swing.JButton();
+        skipTutorial13 = new javax.swing.JButton();
+        tituloTutorial12 = new javax.swing.JLabel();
+        scrollDescription12 = new javax.swing.JScrollPane();
+        descriptionTutorial12 = new javax.swing.JTextArea();
+        imagenTutorial12 = new javax.swing.JLabel();
+        imagenTutorialAux = new javax.swing.JLabel();
+        panelTutorial13 = new javax.swing.JPanel();
+        siguiente12 = new javax.swing.JButton();
+        atras12 = new javax.swing.JButton();
+        tituloTutorial13 = new javax.swing.JLabel();
+        scrollDescription13 = new javax.swing.JScrollPane();
+        descriptionTutorial13 = new javax.swing.JTextArea();
+        imagenTutorial13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,7 +167,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
 
         EscudoUDC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/escudo-unicartagena.png"))); // NOI18N
 
-        titulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        titulo.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         titulo.setText("ClustalUDC");
 
         skipTutorial.setText("Saltar Tutorial");
@@ -63,6 +178,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         Continuar.setText("Continuar");
+        Continuar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ContinuarActionPerformed(evt);
+            }
+        });
 
         descripcion.setLabelFor(titulo);
         descripcion.setText("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. ");
@@ -72,6 +192,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         descripcion.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
         salir.setText("Salir");
+        salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirActionPerformed(evt);
+            }
+        });
 
         descripcion1.setLabelFor(titulo);
         descripcion1.setText("A continuacion encontrara el tutorial de como usar el aplicativo.");
@@ -95,67 +220,63 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         panelPrincipalLayout.setHorizontalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addGap(182, 182, 182)
-                        .addComponent(titulo)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(salir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(skipTutorial)
-                        .addGap(18, 18, 18)
-                        .addComponent(Continuar))
-                    .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                                .addGap(97, 97, 97)
-                                .addComponent(descripcion1))
-                            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                                .addGap(125, 125, 125)
-                                .addComponent(jLabel1)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap()
+                .addComponent(salir)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(skipTutorial)
+                .addGap(18, 18, 18)
+                .addComponent(Continuar)
                 .addContainerGap())
             .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
                 .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(40, 40, 40)
-                        .addComponent(EscudoUDC))
-                    .addComponent(descripcion))
-                .addGap(0, 51, Short.MAX_VALUE))
+                        .addGap(101, 101, 101)
+                        .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(descripcion)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(descripcion1)
+                                    .addGap(47, 47, 47))
+                                .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                    .addGap(75, 75, 75)
+                                    .addComponent(jLabel1)
+                                    .addGap(75, 75, 75)))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)))
+                    .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(EscudoUDC)))
+                .addGap(0, 101, Short.MAX_VALUE))
+            .addGroup(panelPrincipalLayout.createSequentialGroup()
+                .addGap(198, 198, 198)
+                .addComponent(titulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(titulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descripcion1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(EscudoUDC)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5)
-                        .addGap(40, 40, 40)))
+                .addGap(47, 47, 47)
+                .addComponent(EscudoUDC)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addGap(40, 40, 40)
                 .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Continuar)
                     .addComponent(skipTutorial)
@@ -166,28 +287,70 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         descripcion.getAccessibleContext().setAccessibleDescription("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. A continuacion encontrara el tutorial de como usar el aplicativo, como hacer un analisis y como visualizar su modelo.");
 
         siguiente.setText("Siguiente");
+        siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguienteActionPerformed(evt);
+            }
+        });
 
         atras.setText("Atras");
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
 
         skipTutorial2.setText("Saltar Tutorial");
+        skipTutorial2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial2ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial1.setText("Lobby");
+
+        descriptionTutorial1.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial1.setColumns(20);
+        descriptionTutorial1.setRows(5);
+        descriptionTutorial1.setText("Al iniciar el programa se presentara una vista con tres secciones donde\nse muestra información. se encuentra una barra con opciones de menu con \nla que se puede interactuar con las distintas funciones del sistema y \nel logo de la universidad de Cartagena que despliega una descripcion de\nla investigación.");
+        descriptionTutorial1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial1.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription1.setViewportView(descriptionTutorial1);
+
+        imagenTutorial1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby.png"))); // NOI18N
 
         javax.swing.GroupLayout panelTutorial1Layout = new javax.swing.GroupLayout(panelTutorial1);
         panelTutorial1.setLayout(panelTutorial1Layout);
         panelTutorial1Layout.setHorizontalGroup(
             panelTutorial1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial1Layout.createSequentialGroup()
+            .addGroup(panelTutorial1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(skipTutorial2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
-                .addComponent(atras)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(siguiente)
+                .addGroup(panelTutorial1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial1Layout.createSequentialGroup()
+                        .addComponent(skipTutorial2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente))
+                    .addGroup(panelTutorial1Layout.createSequentialGroup()
+                        .addGroup(panelTutorial1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         panelTutorial1Layout.setVerticalGroup(
             panelTutorial1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial1Layout.createSequentialGroup()
-                .addContainerGap(366, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(tituloTutorial1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(panelTutorial1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente)
                     .addComponent(atras)
@@ -195,27 +358,1204 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        siguiente1.setText("Siguiente");
+        siguiente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente1ActionPerformed(evt);
+            }
+        });
+
+        atras1.setText("Atras");
+        atras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras1ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial3.setText("Saltar Tutorial");
+        skipTutorial3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial3ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial2.setText("Lobby");
+
+        descriptionTutorial2.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial2.setColumns(20);
+        descriptionTutorial2.setRows(5);
+        descriptionTutorial2.setText("La sección sombreada en negro es la sección donde se muestra el analisis\nde la proteina ingresada, aqui despues de cargar la proteina se refleja\nel analisis realizado por el sistema mostrando las mutaciones\ncorrespodientes a dicha proteina.");
+        descriptionTutorial2.setBorder(null);
+        descriptionTutorial2.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription2.setViewportView(descriptionTutorial2);
+
+        imagenTutorial2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby4.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial2Layout = new javax.swing.GroupLayout(panelTutorial2);
+        panelTutorial2.setLayout(panelTutorial2Layout);
+        panelTutorial2Layout.setHorizontalGroup(
+            panelTutorial2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial2Layout.createSequentialGroup()
+                        .addComponent(skipTutorial3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente1))
+                    .addComponent(scrollDescription2)
+                    .addGroup(panelTutorial2Layout.createSequentialGroup()
+                        .addGroup(panelTutorial2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial2)
+                            .addComponent(imagenTutorial2))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial2Layout.setVerticalGroup(
+            panelTutorial2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente1)
+                    .addComponent(atras1)
+                    .addComponent(skipTutorial3))
+                .addContainerGap())
+        );
+
+        siguiente2.setText("Siguiente");
+        siguiente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente2ActionPerformed(evt);
+            }
+        });
+
+        atras2.setText("Atras");
+        atras2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras2ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial4.setText("Saltar Tutorial");
+        skipTutorial4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial4ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial3.setText("Lobby");
+
+        descriptionTutorial3.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial3.setColumns(20);
+        descriptionTutorial3.setRows(5);
+        descriptionTutorial3.setText("La sección sombreada en negro es la sección donde se muestra el nombre\nde la proteina ingresada, aqui despues de cargar la proteina se refleja\nel nombre que viene incluido en el archivo como encabezado, esdecir,\nla primera Linea del archivo cargado.");
+        descriptionTutorial3.setBorder(null);
+        descriptionTutorial3.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription3.setViewportView(descriptionTutorial3);
+
+        imagenTutorial3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby5.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial3Layout = new javax.swing.GroupLayout(panelTutorial3);
+        panelTutorial3.setLayout(panelTutorial3Layout);
+        panelTutorial3Layout.setHorizontalGroup(
+            panelTutorial3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial3Layout.createSequentialGroup()
+                        .addComponent(skipTutorial4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente2))
+                    .addGroup(panelTutorial3Layout.createSequentialGroup()
+                        .addGroup(panelTutorial3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial3Layout.setVerticalGroup(
+            panelTutorial3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription3, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente2)
+                    .addComponent(atras2)
+                    .addComponent(skipTutorial4))
+                .addContainerGap())
+        );
+
+        siguiente3.setText("Siguiente");
+        siguiente3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente3ActionPerformed(evt);
+            }
+        });
+
+        atras3.setText("Atras");
+        atras3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras3ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial5.setText("Saltar Tutorial");
+        skipTutorial5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial5ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial4.setText("Lobby");
+
+        descriptionTutorial4.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial4.setColumns(20);
+        descriptionTutorial4.setRows(5);
+        descriptionTutorial4.setText("La sección sombreada en negro es la sección donde se muestran los \nresultados obtenidos en el analisis realizado al momento del cargue del\narchivo, aqui despues de analizar la proteina se reflejan los cambios\nque se obtuvieron, es decir, las mutaciones encontradas y su posición.");
+        descriptionTutorial4.setBorder(null);
+        descriptionTutorial4.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription4.setViewportView(descriptionTutorial4);
+
+        imagenTutorial4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby6.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial4Layout = new javax.swing.GroupLayout(panelTutorial4);
+        panelTutorial4.setLayout(panelTutorial4Layout);
+        panelTutorial4Layout.setHorizontalGroup(
+            panelTutorial4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial4Layout.createSequentialGroup()
+                        .addComponent(skipTutorial5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente3))
+                    .addGroup(panelTutorial4Layout.createSequentialGroup()
+                        .addGroup(panelTutorial4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription4, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial4, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial4Layout.setVerticalGroup(
+            panelTutorial4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription4, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(imagenTutorial4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelTutorial4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente3)
+                    .addComponent(atras3)
+                    .addComponent(skipTutorial5))
+                .addContainerGap())
+        );
+
+        siguiente4.setText("Siguiente");
+        siguiente4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente4ActionPerformed(evt);
+            }
+        });
+
+        atras4.setText("Atras");
+        atras4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras4ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial6.setText("Saltar Tutorial");
+        skipTutorial6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial6ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial5.setText("Lobby");
+
+        descriptionTutorial5.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial5.setColumns(20);
+        descriptionTutorial5.setRows(5);
+        descriptionTutorial5.setText("La sección sombreada en negro es el escudo de la Universidad de \nCartagena, el cual tiene un boton de Mas información para conocer otros\ndetalles de la investigación a nivel general.");
+        descriptionTutorial5.setBorder(null);
+        descriptionTutorial5.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription5.setViewportView(descriptionTutorial5);
+
+        imagenTutorial5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby7.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial5Layout = new javax.swing.GroupLayout(panelTutorial5);
+        panelTutorial5.setLayout(panelTutorial5Layout);
+        panelTutorial5Layout.setHorizontalGroup(
+            panelTutorial5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial5Layout.createSequentialGroup()
+                        .addComponent(skipTutorial6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente4))
+                    .addGroup(panelTutorial5Layout.createSequentialGroup()
+                        .addGroup(panelTutorial5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription5, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial5, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial5Layout.setVerticalGroup(
+            panelTutorial5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription5, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(imagenTutorial5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelTutorial5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente4)
+                    .addComponent(atras4)
+                    .addComponent(skipTutorial6))
+                .addContainerGap())
+        );
+
+        siguiente5.setText("Siguiente");
+        siguiente5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente5ActionPerformed(evt);
+            }
+        });
+
+        atras5.setText("Atras");
+        atras5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras5ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial7.setText("Saltar Tutorial");
+        skipTutorial7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial7ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial6.setText("Cargue del Archivo");
+
+        descriptionTutorial6.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial6.setColumns(20);
+        descriptionTutorial6.setRows(5);
+        descriptionTutorial6.setText("Para buscar se deben seguir los siguientes pasos:\n1. Se presiona en el menú de la parte superior, el botón Archivo->Abrir.\n2. Se selecciona el archivo en formato FASTA dependiendo su ubicación \nen carpeta.\n3. Se presiona el botón \"Abrir\".");
+        descriptionTutorial6.setBorder(null);
+        descriptionTutorial6.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription6.setViewportView(descriptionTutorial6);
+
+        imagenTutorial6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby2.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial6Layout = new javax.swing.GroupLayout(panelTutorial6);
+        panelTutorial6.setLayout(panelTutorial6Layout);
+        panelTutorial6Layout.setHorizontalGroup(
+            panelTutorial6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial6Layout.createSequentialGroup()
+                        .addComponent(skipTutorial7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente5))
+                    .addGroup(panelTutorial6Layout.createSequentialGroup()
+                        .addGroup(panelTutorial6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription6, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial6, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial6Layout.setVerticalGroup(
+            panelTutorial6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(scrollDescription6, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente5)
+                    .addComponent(atras5)
+                    .addComponent(skipTutorial7))
+                .addContainerGap())
+        );
+
+        siguiente6.setText("Siguiente");
+        siguiente6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente6ActionPerformed(evt);
+            }
+        });
+
+        atras6.setText("Atras");
+        atras6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras6ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial8.setText("Saltar Tutorial");
+        skipTutorial8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial8ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial7.setText("Cargue del Archivo");
+
+        descriptionTutorial7.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial7.setColumns(20);
+        descriptionTutorial7.setRows(5);
+        descriptionTutorial7.setText("Una vez seleccionado el archivo, el sistema redirige a la interfaz del \nlobby con cambios en la descripción y se habilitan las demás \nfuncionalidades del software.\nEn caso de que el archivo ingresado no tenga el formato FASTA, \nun mensaje de información aparecerá indicando la advertencia.\n\n");
+        descriptionTutorial7.setBorder(null);
+        descriptionTutorial7.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription7.setViewportView(descriptionTutorial7);
+
+        imagenTutorial7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby3.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial7Layout = new javax.swing.GroupLayout(panelTutorial7);
+        panelTutorial7.setLayout(panelTutorial7Layout);
+        panelTutorial7Layout.setHorizontalGroup(
+            panelTutorial7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial7Layout.createSequentialGroup()
+                        .addComponent(skipTutorial8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente6))
+                    .addGroup(panelTutorial7Layout.createSequentialGroup()
+                        .addGroup(panelTutorial7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription7, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial7, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial7Layout.setVerticalGroup(
+            panelTutorial7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(scrollDescription7, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente6)
+                    .addComponent(atras6)
+                    .addComponent(skipTutorial8))
+                .addContainerGap())
+        );
+
+        siguiente7.setText("Siguiente");
+        siguiente7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente7ActionPerformed(evt);
+            }
+        });
+
+        atras7.setText("Atras");
+        atras7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras7ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial9.setText("Saltar Tutorial");
+        skipTutorial9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial9ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial8.setText("Analisis de resultados");
+
+        descriptionTutorial8.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial8.setColumns(20);
+        descriptionTutorial8.setRows(5);
+        descriptionTutorial8.setText("Luego de cargar el archivo se empieza a generar el análisis y luego que \ntermina dicho análisis un mensaje de información es mostrado en \npantalla con los detalles del análisis, así se haya presentado o no \nuna mutación.");
+        descriptionTutorial8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial8.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription8.setViewportView(descriptionTutorial8);
+
+        imagenTutorial8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Analisis-mutacion.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial8Layout = new javax.swing.GroupLayout(panelTutorial8);
+        panelTutorial8.setLayout(panelTutorial8Layout);
+        panelTutorial8Layout.setHorizontalGroup(
+            panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial8Layout.createSequentialGroup()
+                        .addComponent(skipTutorial9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente7))
+                    .addGroup(panelTutorial8Layout.createSequentialGroup()
+                        .addGroup(panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription8, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial8, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial8Layout.setVerticalGroup(
+            panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription8, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente7)
+                    .addComponent(atras7)
+                    .addComponent(skipTutorial9))
+                .addContainerGap())
+        );
+
+        siguiente8.setText("Siguiente");
+        siguiente8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente8ActionPerformed(evt);
+            }
+        });
+
+        atras8.setText("Atras");
+        atras8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras8ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial10.setText("Saltar Tutorial");
+        skipTutorial10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial10ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial9.setText("Analisis de resultados");
+
+        descriptionTutorial9.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial9.setColumns(20);
+        descriptionTutorial9.setRows(5);
+        descriptionTutorial9.setText("Además en el lobby, en la ventana inferior mostrada anteriormente en \neste tutorial, aparecerá la información detallada de la mutación.\nmisma información que se muestra cuando se termina el analisis y se\ndespliega el mensaje emergente con el resultado del análisis.");
+        descriptionTutorial9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial9.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription9.setViewportView(descriptionTutorial9);
+
+        imagenTutorial9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Analisis-mutacion2.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial9Layout = new javax.swing.GroupLayout(panelTutorial9);
+        panelTutorial9.setLayout(panelTutorial9Layout);
+        panelTutorial9Layout.setHorizontalGroup(
+            panelTutorial9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial9Layout.createSequentialGroup()
+                        .addComponent(skipTutorial10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente8))
+                    .addGroup(panelTutorial9Layout.createSequentialGroup()
+                        .addGroup(panelTutorial9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription9, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial9, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial9Layout.setVerticalGroup(
+            panelTutorial9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription9, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente8)
+                    .addComponent(atras8)
+                    .addComponent(skipTutorial10))
+                .addContainerGap())
+        );
+
+        siguiente9.setText("Siguiente");
+        siguiente9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente9ActionPerformed(evt);
+            }
+        });
+
+        atras9.setText("Atras");
+        atras9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras9ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial11.setText("Saltar Tutorial");
+        skipTutorial11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial11ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial10.setText("Comparar resultados");
+
+        descriptionTutorial10.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial10.setColumns(20);
+        descriptionTutorial10.setRows(5);
+        descriptionTutorial10.setText("Para realizar la comparación con la base de datos de otros estudios \nrelacionados con la proteína p53 se deben realizar los siguientes pasos:\n1. Desde la interfaz de lobby se presiona en el menú de la parte \nsuperior, el botón Acción -> Comparar Resultados.\n2. Aparece una nueva ventana con la información encontrada.");
+        descriptionTutorial10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial10.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription10.setViewportView(descriptionTutorial10);
+
+        imagenTutorial10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Tabla-De-Resultados.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial10Layout = new javax.swing.GroupLayout(panelTutorial10);
+        panelTutorial10.setLayout(panelTutorial10Layout);
+        panelTutorial10Layout.setHorizontalGroup(
+            panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial10Layout.createSequentialGroup()
+                        .addComponent(skipTutorial11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente9))
+                    .addGroup(panelTutorial10Layout.createSequentialGroup()
+                        .addGroup(panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription10, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial10, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial10Layout.setVerticalGroup(
+            panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription10, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(imagenTutorial10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente9)
+                    .addComponent(atras9)
+                    .addComponent(skipTutorial11))
+                .addContainerGap())
+        );
+
+        siguiente10.setText("Siguiente");
+        siguiente10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente10ActionPerformed(evt);
+            }
+        });
+
+        atras10.setText("Atras");
+        atras10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras10ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial12.setText("Saltar Tutorial");
+        skipTutorial12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial12ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial11.setText("Modelo 3D de la proteína mutada");
+
+        descriptionTutorial11.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial11.setColumns(20);
+        descriptionTutorial11.setRows(5);
+        descriptionTutorial11.setText("Para ver el modelo 3D se deben seguir los siguientes pasos:\n1. Desde la interfaz de lobby (figura 3) se presiona en el menú de \nla parte superior, el botón Acción -> Modelo 3D -> Mutación.\n2. Aparecen dos ventanas con los modelos de la proteína p53 resaltando \nla posición donde se presenta la mutación (un modelo en la estructura \nprimaria y otro en la estructura secundaria).");
+        descriptionTutorial11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial11.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription11.setViewportView(descriptionTutorial11);
+
+        imagenTutorial11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Modelo-3D.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial11Layout = new javax.swing.GroupLayout(panelTutorial11);
+        panelTutorial11.setLayout(panelTutorial11Layout);
+        panelTutorial11Layout.setHorizontalGroup(
+            panelTutorial11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial11Layout.createSequentialGroup()
+                        .addComponent(skipTutorial12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente10))
+                    .addGroup(panelTutorial11Layout.createSequentialGroup()
+                        .addGroup(panelTutorial11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription11, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial11, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial11Layout.setVerticalGroup(
+            panelTutorial11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription11, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorial11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelTutorial11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente10)
+                    .addComponent(atras10)
+                    .addComponent(skipTutorial12))
+                .addContainerGap())
+        );
+
+        siguiente11.setText("Siguiente");
+        siguiente11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente11ActionPerformed(evt);
+            }
+        });
+
+        atras11.setText("Atras");
+        atras11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras11ActionPerformed(evt);
+            }
+        });
+
+        skipTutorial13.setText("Saltar Tutorial");
+        skipTutorial13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial13ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial12.setText("Formato Correcto de la proteina");
+
+        descriptionTutorial12.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial12.setColumns(20);
+        descriptionTutorial12.setRows(5);
+        descriptionTutorial12.setText("Para visualizar correctamente el analisis y poder usar el software\ncorrectamente debe ingresar la poteina en secuencia de bases\nnitrogenadas y NO en secuencia de aminoacidos.\nComo se muestra a continuación.");
+        descriptionTutorial12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial12.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription12.setViewportView(descriptionTutorial12);
+
+        imagenTutorial12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Ejemplo-Proteina.png"))); // NOI18N
+
+        imagenTutorialAux.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Ejemplo-Proteina2.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial12Layout = new javax.swing.GroupLayout(panelTutorial12);
+        panelTutorial12.setLayout(panelTutorial12Layout);
+        panelTutorial12Layout.setHorizontalGroup(
+            panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial12Layout.createSequentialGroup()
+                        .addComponent(skipTutorial13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente11))
+                    .addGroup(panelTutorial12Layout.createSequentialGroup()
+                        .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(scrollDescription12, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tituloTutorial12, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(imagenTutorial12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(imagenTutorialAux))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial12Layout.setVerticalGroup(
+            panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription12, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(imagenTutorial12, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorialAux)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente11)
+                    .addComponent(atras11)
+                    .addComponent(skipTutorial13))
+                .addContainerGap())
+        );
+
+        siguiente12.setText("Finalizar");
+        siguiente12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente12ActionPerformed(evt);
+            }
+        });
+
+        atras12.setText("Atras");
+        atras12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras12ActionPerformed(evt);
+            }
+        });
+
+        tituloTutorial13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial13.setText("Final");
+
+        descriptionTutorial13.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial13.setColumns(20);
+        descriptionTutorial13.setRows(5);
+        descriptionTutorial13.setText("Se ecuentra listo para poder operar el software ClustalUDC.\n\nPara mayor informacion, desplegar nuevamente este tutorial o abrir el\nmanual de usuario con información más detallada ingresar a la barra de\nmenú el botón Ayuda.");
+        descriptionTutorial13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial13.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription13.setViewportView(descriptionTutorial13);
+
+        imagenTutorial13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Ayuda.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial13Layout = new javax.swing.GroupLayout(panelTutorial13);
+        panelTutorial13.setLayout(panelTutorial13Layout);
+        panelTutorial13Layout.setHorizontalGroup(
+            panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial13Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(atras12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente12))
+                    .addGroup(panelTutorial13Layout.createSequentialGroup()
+                        .addGroup(panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(scrollDescription13, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloTutorial13, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imagenTutorial13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial13Layout.setVerticalGroup(
+            panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription13, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addComponent(imagenTutorial13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente12)
+                    .addComponent(atras12))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panelTutorial1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panelTutorial1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(56, 56, 56)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(56, 56, 56)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void skipTutorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorialActionPerformed
-        // TODO add your handling code here:
+        cerrarTutorialAbrirPrincipalm();
     }//GEN-LAST:event_skipTutorialActionPerformed
+
+    private void siguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente1ActionPerformed
+        panelTutorial2.setVisible(false);
+        panelTutorial3.setVisible(true);
+    }//GEN-LAST:event_siguiente1ActionPerformed
+
+    private void ContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinuarActionPerformed
+
+        panelPrincipal.setVisible(false);
+        panelTutorial1.setVisible(true);
+
+    }//GEN-LAST:event_ContinuarActionPerformed
+
+    private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
+        panelTutorial1.setVisible(false);
+        panelTutorial2.setVisible(true);
+    }//GEN-LAST:event_siguienteActionPerformed
+
+    private void siguiente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente2ActionPerformed
+        panelTutorial3.setVisible(false);
+        panelTutorial4.setVisible(true);
+    }//GEN-LAST:event_siguiente2ActionPerformed
+
+    private void siguiente3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente3ActionPerformed
+        panelTutorial4.setVisible(false);
+        panelTutorial5.setVisible(true);
+    }//GEN-LAST:event_siguiente3ActionPerformed
+
+    private void siguiente4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente4ActionPerformed
+        panelTutorial5.setVisible(false);
+        panelTutorial6.setVisible(true);
+    }//GEN-LAST:event_siguiente4ActionPerformed
+
+    private void siguiente5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente5ActionPerformed
+        panelTutorial6.setVisible(false);
+        panelTutorial7.setVisible(true);
+    }//GEN-LAST:event_siguiente5ActionPerformed
+
+    private void siguiente6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente6ActionPerformed
+        panelTutorial7.setVisible(false);
+        panelTutorial8.setVisible(true);
+    }//GEN-LAST:event_siguiente6ActionPerformed
+
+    private void siguiente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente7ActionPerformed
+        panelTutorial8.setVisible(false);
+        panelTutorial9.setVisible(true);
+    }//GEN-LAST:event_siguiente7ActionPerformed
+
+    private void siguiente8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente8ActionPerformed
+        panelTutorial9.setVisible(false);
+        panelTutorial10.setVisible(true);
+    }//GEN-LAST:event_siguiente8ActionPerformed
+
+    private void siguiente9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente9ActionPerformed
+        panelTutorial10.setVisible(false);
+        panelTutorial11.setVisible(true);
+    }//GEN-LAST:event_siguiente9ActionPerformed
+
+    private void siguiente10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente10ActionPerformed
+        panelTutorial11.setVisible(false);
+        panelTutorial12.setVisible(true);
+    }//GEN-LAST:event_siguiente10ActionPerformed
+
+    private void siguiente11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente11ActionPerformed
+        panelTutorial12.setVisible(false);
+        panelTutorial13.setVisible(true);
+    }//GEN-LAST:event_siguiente11ActionPerformed
+
+    private void siguiente12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente12ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_siguiente12ActionPerformed
+
+    private void atras12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras12ActionPerformed
+        panelTutorial13.setVisible(false);
+        panelTutorial12.setVisible(true);
+    }//GEN-LAST:event_atras12ActionPerformed
+
+    private void atras11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras11ActionPerformed
+        panelTutorial12.setVisible(false);
+        panelTutorial11.setVisible(true);
+    }//GEN-LAST:event_atras11ActionPerformed
+
+    private void atras10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras10ActionPerformed
+        panelTutorial11.setVisible(false);
+        panelTutorial10.setVisible(true);
+    }//GEN-LAST:event_atras10ActionPerformed
+
+    private void atras9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras9ActionPerformed
+        panelTutorial10.setVisible(false);
+        panelTutorial9.setVisible(true);
+    }//GEN-LAST:event_atras9ActionPerformed
+
+    private void atras8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras8ActionPerformed
+        panelTutorial9.setVisible(false);
+        panelTutorial8.setVisible(true);
+    }//GEN-LAST:event_atras8ActionPerformed
+
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        panelTutorial1.setVisible(false);
+        panelPrincipal.setVisible(true);
+    }//GEN-LAST:event_atrasActionPerformed
+
+    private void atras7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras7ActionPerformed
+        panelTutorial8.setVisible(false);
+        panelTutorial7.setVisible(true);
+    }//GEN-LAST:event_atras7ActionPerformed
+
+    private void atras6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras6ActionPerformed
+        panelTutorial7.setVisible(false);
+        panelTutorial6.setVisible(true);
+    }//GEN-LAST:event_atras6ActionPerformed
+
+    private void atras5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras5ActionPerformed
+        panelTutorial6.setVisible(false);
+        panelTutorial5.setVisible(true);
+    }//GEN-LAST:event_atras5ActionPerformed
+
+    private void atras4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras4ActionPerformed
+        panelTutorial5.setVisible(false);
+        panelTutorial4.setVisible(true);
+    }//GEN-LAST:event_atras4ActionPerformed
+
+    private void atras3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras3ActionPerformed
+        panelTutorial4.setVisible(false);
+        panelTutorial3.setVisible(true);
+    }//GEN-LAST:event_atras3ActionPerformed
+
+    private void atras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras2ActionPerformed
+        panelTutorial3.setVisible(false);
+        panelTutorial2.setVisible(true);
+    }//GEN-LAST:event_atras2ActionPerformed
+
+    private void atras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras1ActionPerformed
+        panelTutorial2.setVisible(false);
+        panelTutorial1.setVisible(true);
+    }//GEN-LAST:event_atras1ActionPerformed
+
+    private void skipTutorial2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial2ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial2ActionPerformed
+
+    private void skipTutorial3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial3ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial3ActionPerformed
+
+    private void skipTutorial4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial4ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial4ActionPerformed
+
+    private void skipTutorial5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial5ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial5ActionPerformed
+
+    private void skipTutorial6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial6ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial6ActionPerformed
+
+    private void skipTutorial7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial7ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial7ActionPerformed
+
+    private void skipTutorial8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial8ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial8ActionPerformed
+
+    private void skipTutorial9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial9ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial9ActionPerformed
+
+    private void skipTutorial10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial10ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial10ActionPerformed
+
+    private void skipTutorial11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial11ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial11ActionPerformed
+
+    private void skipTutorial12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial12ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial12ActionPerformed
+
+    private void skipTutorial13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial13ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial13ActionPerformed
+
+    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+
+        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+    }//GEN-LAST:event_salirActionPerformed
+
+    private void cerrarTutorialAbrirPrincipalm() {
+        this.setVisible(false);
+        clustalUDC.vistas.Principalm a = new clustalUDC.vistas.Principalm();
+        a.setVisible(true);
+        a.setLocationRelativeTo(null);
+    }
 
     /**
      * @param args the command line arguments
@@ -256,8 +1596,47 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton Continuar;
     private javax.swing.JLabel EscudoUDC;
     private javax.swing.JButton atras;
+    private javax.swing.JButton atras1;
+    private javax.swing.JButton atras10;
+    private javax.swing.JButton atras11;
+    private javax.swing.JButton atras12;
+    private javax.swing.JButton atras2;
+    private javax.swing.JButton atras3;
+    private javax.swing.JButton atras4;
+    private javax.swing.JButton atras5;
+    private javax.swing.JButton atras6;
+    private javax.swing.JButton atras7;
+    private javax.swing.JButton atras8;
+    private javax.swing.JButton atras9;
     private javax.swing.JLabel descripcion;
     private javax.swing.JLabel descripcion1;
+    private javax.swing.JTextArea descriptionTutorial1;
+    private javax.swing.JTextArea descriptionTutorial10;
+    private javax.swing.JTextArea descriptionTutorial11;
+    private javax.swing.JTextArea descriptionTutorial12;
+    private javax.swing.JTextArea descriptionTutorial13;
+    private javax.swing.JTextArea descriptionTutorial2;
+    private javax.swing.JTextArea descriptionTutorial3;
+    private javax.swing.JTextArea descriptionTutorial4;
+    private javax.swing.JTextArea descriptionTutorial5;
+    private javax.swing.JTextArea descriptionTutorial6;
+    private javax.swing.JTextArea descriptionTutorial7;
+    private javax.swing.JTextArea descriptionTutorial8;
+    private javax.swing.JTextArea descriptionTutorial9;
+    private javax.swing.JLabel imagenTutorial1;
+    private javax.swing.JLabel imagenTutorial10;
+    private javax.swing.JLabel imagenTutorial11;
+    private javax.swing.JLabel imagenTutorial12;
+    private javax.swing.JLabel imagenTutorial13;
+    private javax.swing.JLabel imagenTutorial2;
+    private javax.swing.JLabel imagenTutorial3;
+    private javax.swing.JLabel imagenTutorial4;
+    private javax.swing.JLabel imagenTutorial5;
+    private javax.swing.JLabel imagenTutorial6;
+    private javax.swing.JLabel imagenTutorial7;
+    private javax.swing.JLabel imagenTutorial8;
+    private javax.swing.JLabel imagenTutorial9;
+    private javax.swing.JLabel imagenTutorialAux;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -265,10 +1644,71 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel panelPrincipal;
     private javax.swing.JPanel panelTutorial1;
+    private javax.swing.JPanel panelTutorial10;
+    private javax.swing.JPanel panelTutorial11;
+    private javax.swing.JPanel panelTutorial12;
+    private javax.swing.JPanel panelTutorial13;
+    private javax.swing.JPanel panelTutorial2;
+    private javax.swing.JPanel panelTutorial3;
+    private javax.swing.JPanel panelTutorial4;
+    private javax.swing.JPanel panelTutorial5;
+    private javax.swing.JPanel panelTutorial6;
+    private javax.swing.JPanel panelTutorial7;
+    private javax.swing.JPanel panelTutorial8;
+    private javax.swing.JPanel panelTutorial9;
     private javax.swing.JButton salir;
+    private javax.swing.JScrollPane scrollDescription1;
+    private javax.swing.JScrollPane scrollDescription10;
+    private javax.swing.JScrollPane scrollDescription11;
+    private javax.swing.JScrollPane scrollDescription12;
+    private javax.swing.JScrollPane scrollDescription13;
+    private javax.swing.JScrollPane scrollDescription2;
+    private javax.swing.JScrollPane scrollDescription3;
+    private javax.swing.JScrollPane scrollDescription4;
+    private javax.swing.JScrollPane scrollDescription5;
+    private javax.swing.JScrollPane scrollDescription6;
+    private javax.swing.JScrollPane scrollDescription7;
+    private javax.swing.JScrollPane scrollDescription8;
+    private javax.swing.JScrollPane scrollDescription9;
     private javax.swing.JButton siguiente;
+    private javax.swing.JButton siguiente1;
+    private javax.swing.JButton siguiente10;
+    private javax.swing.JButton siguiente11;
+    private javax.swing.JButton siguiente12;
+    private javax.swing.JButton siguiente2;
+    private javax.swing.JButton siguiente3;
+    private javax.swing.JButton siguiente4;
+    private javax.swing.JButton siguiente5;
+    private javax.swing.JButton siguiente6;
+    private javax.swing.JButton siguiente7;
+    private javax.swing.JButton siguiente8;
+    private javax.swing.JButton siguiente9;
     private javax.swing.JButton skipTutorial;
+    private javax.swing.JButton skipTutorial10;
+    private javax.swing.JButton skipTutorial11;
+    private javax.swing.JButton skipTutorial12;
+    private javax.swing.JButton skipTutorial13;
     private javax.swing.JButton skipTutorial2;
+    private javax.swing.JButton skipTutorial3;
+    private javax.swing.JButton skipTutorial4;
+    private javax.swing.JButton skipTutorial5;
+    private javax.swing.JButton skipTutorial6;
+    private javax.swing.JButton skipTutorial7;
+    private javax.swing.JButton skipTutorial8;
+    private javax.swing.JButton skipTutorial9;
     private javax.swing.JLabel titulo;
+    private javax.swing.JLabel tituloTutorial1;
+    private javax.swing.JLabel tituloTutorial10;
+    private javax.swing.JLabel tituloTutorial11;
+    private javax.swing.JLabel tituloTutorial12;
+    private javax.swing.JLabel tituloTutorial13;
+    private javax.swing.JLabel tituloTutorial2;
+    private javax.swing.JLabel tituloTutorial3;
+    private javax.swing.JLabel tituloTutorial4;
+    private javax.swing.JLabel tituloTutorial5;
+    private javax.swing.JLabel tituloTutorial6;
+    private javax.swing.JLabel tituloTutorial7;
+    private javax.swing.JLabel tituloTutorial8;
+    private javax.swing.JLabel tituloTutorial9;
     // End of variables declaration//GEN-END:variables
 }
