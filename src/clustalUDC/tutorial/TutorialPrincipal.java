@@ -773,17 +773,17 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         skipTutorial11.setText("Saltar Tutorial");
 
         tituloTutorial10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        tituloTutorial10.setText("Modelo 3D de la proteína mutada");
+        tituloTutorial10.setText("Comparar resultados");
 
         descriptionTutorial10.setBackground(new java.awt.Color(240, 240, 240));
         descriptionTutorial10.setColumns(20);
         descriptionTutorial10.setRows(5);
-        descriptionTutorial10.setText("Para ver el modelo 3D se deben seguir los siguientes pasos:\n1. Desde la interfaz de lobby (figura 3) se presiona en el menú de \nla parte superior, el botón Acción -> Modelo 3D -> Mutación.\n2. Aparecen dos ventanas con los modelos de la proteína p53 resaltando \nla posición donde se presenta la mutación (un modelo en la estructura \nprimaria y otro en la estructura secundaria).");
+        descriptionTutorial10.setText("Para realizar la comparación con la base de datos de otros estudios \nrelacionados con la proteína p53 se deben realizar los siguientes pasos:\n1. Desde la interfaz de lobby se presiona en el menú de la parte \nsuperior, el botón Acción -> Comparar Resultados.\n2. Aparece una nueva ventana con la información encontrada.");
         descriptionTutorial10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
         descriptionTutorial10.setPreferredSize(new java.awt.Dimension(190, 94));
         scrollDescription10.setViewportView(descriptionTutorial10);
 
-        imagenTutorial10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Modelo-3D.png"))); // NOI18N
+        imagenTutorial10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Tabla-De-Resultados.png"))); // NOI18N
 
         javax.swing.GroupLayout panelTutorial10Layout = new javax.swing.GroupLayout(panelTutorial10);
         panelTutorial10.setLayout(panelTutorial10Layout);
@@ -812,10 +812,10 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(tituloTutorial10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scrollDescription10, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(scrollDescription10, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
                 .addComponent(imagenTutorial10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addGroup(panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente9)
                     .addComponent(atras9)
@@ -830,17 +830,17 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         skipTutorial12.setText("Saltar Tutorial");
 
         tituloTutorial11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        tituloTutorial11.setText("Lobby");
+        tituloTutorial11.setText("Modelo 3D de la proteína mutada");
 
         descriptionTutorial11.setBackground(new java.awt.Color(240, 240, 240));
         descriptionTutorial11.setColumns(20);
         descriptionTutorial11.setRows(5);
-        descriptionTutorial11.setText("Al iniciar el programa se presentara una vista con tres secciones donde\nse muestra información. se encuentra una barra con opciones de menu con \nla que se puede interactuar con las distintas funciones del sistema y \nel logo de la universidad de Cartagena que despliega una descripcion de\nla investigación.");
+        descriptionTutorial11.setText("Para ver el modelo 3D se deben seguir los siguientes pasos:\n1. Desde la interfaz de lobby (figura 3) se presiona en el menú de \nla parte superior, el botón Acción -> Modelo 3D -> Mutación.\n2. Aparecen dos ventanas con los modelos de la proteína p53 resaltando \nla posición donde se presenta la mutación (un modelo en la estructura \nprimaria y otro en la estructura secundaria).");
         descriptionTutorial11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
         descriptionTutorial11.setPreferredSize(new java.awt.Dimension(190, 94));
         scrollDescription11.setViewportView(descriptionTutorial11);
 
-        imagenTutorial11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Lobby.png"))); // NOI18N
+        imagenTutorial11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Modelo-3D.png"))); // NOI18N
 
         javax.swing.GroupLayout panelTutorial11Layout = new javax.swing.GroupLayout(panelTutorial11);
         panelTutorial11.setLayout(panelTutorial11Layout);
@@ -869,10 +869,10 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(tituloTutorial11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scrollDescription11, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(scrollDescription11, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(imagenTutorial11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelTutorial11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente10)
                     .addComponent(atras10)
