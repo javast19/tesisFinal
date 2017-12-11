@@ -20,6 +20,7 @@ import org.biojava.nbio.structure.Structure;
 import org.biojava.nbio.structure.io.PDBFileReader;
 import clustalUDC.PJmol;
 import clustalUDC.persistencia.CargarBD;
+import clustalUDC.tutorial.TutorialPrincipal;
 import java.awt.Desktop;
 import javax.swing.JProgressBar;
 
@@ -825,7 +826,11 @@ public class Principalm extends javax.swing.JFrame {
     }//GEN-LAST:event_ayudaDocActionPerformed
 
     private void tutorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+//        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_DEACTIVATED));
+        clustalUDC.tutorial.TutorialPrincipal tuto = new TutorialPrincipal();
+        tuto.setVisible(true);
+        tuto.setLocationRelativeTo(null); 
     }//GEN-LAST:event_tutorialActionPerformed
 
     /**

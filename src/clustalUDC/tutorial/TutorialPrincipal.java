@@ -155,7 +155,6 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         panelTutorial13 = new javax.swing.JPanel();
         siguiente12 = new javax.swing.JButton();
         atras12 = new javax.swing.JButton();
-        skipTutorial14 = new javax.swing.JButton();
         tituloTutorial13 = new javax.swing.JLabel();
         scrollDescription13 = new javax.swing.JScrollPane();
         descriptionTutorial13 = new javax.swing.JTextArea();
@@ -168,7 +167,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
 
         EscudoUDC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/escudo-unicartagena.png"))); // NOI18N
 
-        titulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        titulo.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         titulo.setText("ClustalUDC");
 
         skipTutorial.setText("Saltar Tutorial");
@@ -193,6 +192,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         descripcion.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
         salir.setText("Salir");
+        salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirActionPerformed(evt);
+            }
+        });
 
         descripcion1.setLabelFor(titulo);
         descripcion1.setText("A continuacion encontrara el tutorial de como usar el aplicativo.");
@@ -216,66 +220,63 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         panelPrincipalLayout.setHorizontalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(salir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(skipTutorial)
-                        .addGap(18, 18, 18)
-                        .addComponent(Continuar))
-                    .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                                .addGap(182, 182, 182)
-                                .addComponent(titulo))
-                            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                                .addGap(97, 97, 97)
-                                .addComponent(descripcion1))
-                            .addGroup(panelPrincipalLayout.createSequentialGroup()
-                                .addGap(125, 125, 125)
-                                .addComponent(jLabel1)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap()
+                .addComponent(salir)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(skipTutorial)
+                .addGap(18, 18, 18)
+                .addComponent(Continuar)
                 .addContainerGap())
             .addGroup(panelPrincipalLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
                 .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(40, 40, 40)
-                        .addComponent(EscudoUDC))
-                    .addComponent(descripcion))
-                .addGap(0, 171, Short.MAX_VALUE))
+                        .addGap(101, 101, 101)
+                        .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(descripcion)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(descripcion1)
+                                    .addGap(47, 47, 47))
+                                .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                    .addGap(75, 75, 75)
+                                    .addComponent(jLabel1)
+                                    .addGap(75, 75, 75)))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)))
+                    .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(EscudoUDC)))
+                .addGap(0, 101, Short.MAX_VALUE))
+            .addGroup(panelPrincipalLayout.createSequentialGroup()
+                .addGap(198, 198, 198)
+                .addComponent(titulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(titulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(descripcion1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPrincipalLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(EscudoUDC)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5)
-                        .addGap(40, 40, 40)))
+                .addGap(47, 47, 47)
+                .addComponent(EscudoUDC)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addGap(40, 40, 40)
                 .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Continuar)
                     .addComponent(skipTutorial)
@@ -300,6 +301,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial2.setText("Saltar Tutorial");
+        skipTutorial2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial2ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial1.setText("Lobby");
@@ -367,6 +373,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial3.setText("Saltar Tutorial");
+        skipTutorial3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial3ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial2.setText("Lobby");
@@ -434,6 +445,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial4.setText("Saltar Tutorial");
+        skipTutorial4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial4ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial3.setText("Lobby");
@@ -501,6 +517,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial5.setText("Saltar Tutorial");
+        skipTutorial5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial5ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial4.setText("Lobby");
@@ -543,9 +564,9 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addComponent(tituloTutorial4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(scrollDescription4, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(imagenTutorial4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(imagenTutorial4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelTutorial4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente3)
                     .addComponent(atras3)
@@ -568,6 +589,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial6.setText("Saltar Tutorial");
+        skipTutorial6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial6ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial5.setText("Lobby");
@@ -610,9 +636,9 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addComponent(tituloTutorial5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(scrollDescription5, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(imagenTutorial5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(imagenTutorial5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelTutorial5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente4)
                     .addComponent(atras4)
@@ -635,6 +661,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial7.setText("Saltar Tutorial");
+        skipTutorial7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial7ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial6.setText("Cargue del Archivo");
@@ -675,7 +706,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(tituloTutorial6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(scrollDescription6, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(imagenTutorial6)
@@ -702,6 +733,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial8.setText("Saltar Tutorial");
+        skipTutorial8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial8ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial7.setText("Cargue del Archivo");
@@ -742,7 +778,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(tituloTutorial7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(scrollDescription7, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(imagenTutorial7)
@@ -769,6 +805,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial9.setText("Saltar Tutorial");
+        skipTutorial9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial9ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial8.setText("Analisis de resultados");
@@ -836,6 +877,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial10.setText("Saltar Tutorial");
+        skipTutorial10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial10ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial9.setText("Analisis de resultados");
@@ -903,6 +949,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial11.setText("Saltar Tutorial");
+        skipTutorial11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial11ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial10.setText("Comparar resultados");
@@ -947,7 +998,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addComponent(scrollDescription10, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
                 .addComponent(imagenTutorial10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente9)
                     .addComponent(atras9)
@@ -970,6 +1021,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial12.setText("Saltar Tutorial");
+        skipTutorial12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial12ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial11.setText("Modelo 3D de la proteína mutada");
@@ -1037,6 +1093,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         skipTutorial13.setText("Saltar Tutorial");
+        skipTutorial13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                skipTutorial13ActionPerformed(evt);
+            }
+        });
 
         tituloTutorial12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial12.setText("Formato Correcto de la proteina");
@@ -1109,8 +1170,6 @@ public class TutorialPrincipal extends javax.swing.JFrame {
             }
         });
 
-        skipTutorial14.setText("Saltar Tutorial");
-
         tituloTutorial13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tituloTutorial13.setText("Final");
 
@@ -1132,8 +1191,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial13Layout.createSequentialGroup()
-                        .addComponent(skipTutorial14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(atras12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(siguiente12))
@@ -1154,11 +1212,10 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addComponent(scrollDescription13, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addComponent(imagenTutorial13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente12)
-                    .addComponent(atras12)
-                    .addComponent(skipTutorial14))
+                    .addComponent(atras12))
                 .addContainerGap())
         );
 
@@ -1301,12 +1358,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void skipTutorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorialActionPerformed
-        
-        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_DEACTIVATED));
-        clustalUDC.vistas.Principalm a = new clustalUDC.vistas.Principalm();
-        a.setVisible(true);
-        a.setLocationRelativeTo(null); 
-        
+        cerrarTutorialAbrirPrincipalm();
     }//GEN-LAST:event_skipTutorialActionPerformed
 
     private void siguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente1ActionPerformed
@@ -1377,7 +1429,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_siguiente11ActionPerformed
 
     private void siguiente12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente12ActionPerformed
-//        JFrame.setVisible(false);
+        cerrarTutorialAbrirPrincipalm();
     }//GEN-LAST:event_siguiente12ActionPerformed
 
     private void atras12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras12ActionPerformed
@@ -1444,6 +1496,66 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         panelTutorial2.setVisible(false);
         panelTutorial1.setVisible(true);
     }//GEN-LAST:event_atras1ActionPerformed
+
+    private void skipTutorial2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial2ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial2ActionPerformed
+
+    private void skipTutorial3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial3ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial3ActionPerformed
+
+    private void skipTutorial4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial4ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial4ActionPerformed
+
+    private void skipTutorial5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial5ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial5ActionPerformed
+
+    private void skipTutorial6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial6ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial6ActionPerformed
+
+    private void skipTutorial7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial7ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial7ActionPerformed
+
+    private void skipTutorial8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial8ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial8ActionPerformed
+
+    private void skipTutorial9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial9ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial9ActionPerformed
+
+    private void skipTutorial10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial10ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial10ActionPerformed
+
+    private void skipTutorial11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial11ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial11ActionPerformed
+
+    private void skipTutorial12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial12ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial12ActionPerformed
+
+    private void skipTutorial13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorial13ActionPerformed
+        cerrarTutorialAbrirPrincipalm();
+    }//GEN-LAST:event_skipTutorial13ActionPerformed
+
+    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+
+        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+    }//GEN-LAST:event_salirActionPerformed
+
+    private void cerrarTutorialAbrirPrincipalm() {
+        this.setVisible(false);
+        clustalUDC.vistas.Principalm a = new clustalUDC.vistas.Principalm();
+        a.setVisible(true);
+        a.setLocationRelativeTo(null);
+    }
 
     /**
      * @param args the command line arguments
@@ -1576,7 +1688,6 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton skipTutorial11;
     private javax.swing.JButton skipTutorial12;
     private javax.swing.JButton skipTutorial13;
-    private javax.swing.JButton skipTutorial14;
     private javax.swing.JButton skipTutorial2;
     private javax.swing.JButton skipTutorial3;
     private javax.swing.JButton skipTutorial4;
