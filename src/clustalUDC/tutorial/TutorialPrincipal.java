@@ -128,6 +128,15 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         scrollDescription11 = new javax.swing.JScrollPane();
         descriptionTutorial11 = new javax.swing.JTextArea();
         imagenTutorial11 = new javax.swing.JLabel();
+        panelTutorial12 = new javax.swing.JPanel();
+        siguiente11 = new javax.swing.JButton();
+        atras11 = new javax.swing.JButton();
+        skipTutorial13 = new javax.swing.JButton();
+        tituloTutorial12 = new javax.swing.JLabel();
+        scrollDescription12 = new javax.swing.JScrollPane();
+        descriptionTutorial12 = new javax.swing.JTextArea();
+        imagenTutorial12 = new javax.swing.JLabel();
+        imagenTutorialAux = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -880,6 +889,69 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        siguiente11.setText("Siguiente");
+
+        atras11.setText("Atras");
+
+        skipTutorial13.setText("Saltar Tutorial");
+
+        tituloTutorial12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tituloTutorial12.setText("Formato Correcto de la proteina");
+
+        descriptionTutorial12.setBackground(new java.awt.Color(240, 240, 240));
+        descriptionTutorial12.setColumns(20);
+        descriptionTutorial12.setRows(5);
+        descriptionTutorial12.setText("Para visualizar correctamente el analisis y poder usar el software\ncorrectamente debe ingresar la poteina en secuencia de bases\nnitrogenadas y NO en secuencia de aminoacidos.\nComo se muestra a continuación.");
+        descriptionTutorial12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 240, 240), 0, true));
+        descriptionTutorial12.setPreferredSize(new java.awt.Dimension(190, 94));
+        scrollDescription12.setViewportView(descriptionTutorial12);
+
+        imagenTutorial12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Ejemplo-Proteina.png"))); // NOI18N
+
+        imagenTutorialAux.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clustalUDC/src/Ejemplo-Proteina2.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelTutorial12Layout = new javax.swing.GroupLayout(panelTutorial12);
+        panelTutorial12.setLayout(panelTutorial12Layout);
+        panelTutorial12Layout.setHorizontalGroup(
+            panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTutorial12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial12Layout.createSequentialGroup()
+                        .addComponent(skipTutorial13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(atras11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(siguiente11))
+                    .addGroup(panelTutorial12Layout.createSequentialGroup()
+                        .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(scrollDescription12, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tituloTutorial12, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(imagenTutorial12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(imagenTutorialAux))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTutorial12Layout.setVerticalGroup(
+            panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTutorial12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tituloTutorial12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollDescription12, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(imagenTutorial12, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(imagenTutorialAux)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                .addGroup(panelTutorial12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(siguiente11)
+                    .addComponent(atras11)
+                    .addComponent(skipTutorial13))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -937,6 +1009,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                     .addContainerGap()
                     .addComponent(panelTutorial11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -993,6 +1070,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                     .addContainerGap()
                     .addComponent(panelTutorial11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelTutorial12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
 
         pack();
@@ -1047,6 +1129,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton atras;
     private javax.swing.JButton atras1;
     private javax.swing.JButton atras10;
+    private javax.swing.JButton atras11;
     private javax.swing.JButton atras2;
     private javax.swing.JButton atras3;
     private javax.swing.JButton atras4;
@@ -1060,6 +1143,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextArea descriptionTutorial1;
     private javax.swing.JTextArea descriptionTutorial10;
     private javax.swing.JTextArea descriptionTutorial11;
+    private javax.swing.JTextArea descriptionTutorial12;
     private javax.swing.JTextArea descriptionTutorial2;
     private javax.swing.JTextArea descriptionTutorial3;
     private javax.swing.JTextArea descriptionTutorial4;
@@ -1071,6 +1155,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel imagenTutorial1;
     private javax.swing.JLabel imagenTutorial10;
     private javax.swing.JLabel imagenTutorial11;
+    private javax.swing.JLabel imagenTutorial12;
     private javax.swing.JLabel imagenTutorial2;
     private javax.swing.JLabel imagenTutorial3;
     private javax.swing.JLabel imagenTutorial4;
@@ -1079,6 +1164,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel imagenTutorial7;
     private javax.swing.JLabel imagenTutorial8;
     private javax.swing.JLabel imagenTutorial9;
+    private javax.swing.JLabel imagenTutorialAux;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1088,6 +1174,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel panelTutorial1;
     private javax.swing.JPanel panelTutorial10;
     private javax.swing.JPanel panelTutorial11;
+    private javax.swing.JPanel panelTutorial12;
     private javax.swing.JPanel panelTutorial2;
     private javax.swing.JPanel panelTutorial3;
     private javax.swing.JPanel panelTutorial4;
@@ -1100,6 +1187,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JScrollPane scrollDescription1;
     private javax.swing.JScrollPane scrollDescription10;
     private javax.swing.JScrollPane scrollDescription11;
+    private javax.swing.JScrollPane scrollDescription12;
     private javax.swing.JScrollPane scrollDescription2;
     private javax.swing.JScrollPane scrollDescription3;
     private javax.swing.JScrollPane scrollDescription4;
@@ -1111,6 +1199,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton siguiente;
     private javax.swing.JButton siguiente1;
     private javax.swing.JButton siguiente10;
+    private javax.swing.JButton siguiente11;
     private javax.swing.JButton siguiente2;
     private javax.swing.JButton siguiente3;
     private javax.swing.JButton siguiente4;
@@ -1123,6 +1212,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton skipTutorial10;
     private javax.swing.JButton skipTutorial11;
     private javax.swing.JButton skipTutorial12;
+    private javax.swing.JButton skipTutorial13;
     private javax.swing.JButton skipTutorial2;
     private javax.swing.JButton skipTutorial3;
     private javax.swing.JButton skipTutorial4;
@@ -1135,6 +1225,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel tituloTutorial1;
     private javax.swing.JLabel tituloTutorial10;
     private javax.swing.JLabel tituloTutorial11;
+    private javax.swing.JLabel tituloTutorial12;
     private javax.swing.JLabel tituloTutorial2;
     private javax.swing.JLabel tituloTutorial3;
     private javax.swing.JLabel tituloTutorial4;
