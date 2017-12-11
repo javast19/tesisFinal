@@ -5,6 +5,9 @@
  */
 package clustalUDC.tutorial;
 
+import com.lowagie.text.Graphic;
+import java.awt.Graphics;
+
 /**
  *
  * @author Usuario
@@ -16,6 +19,19 @@ public class TutorialPrincipal extends javax.swing.JFrame {
      */
     public TutorialPrincipal() {
         initComponents();
+        panelTutorial1.setVisible(false);
+        panelTutorial2.setVisible(false);
+        panelTutorial3.setVisible(false);
+        panelTutorial4.setVisible(false);
+        panelTutorial5.setVisible(false);
+        panelTutorial6.setVisible(false);
+        panelTutorial7.setVisible(false);
+        panelTutorial8.setVisible(false);
+        panelTutorial9.setVisible(false);
+        panelTutorial10.setVisible(false);
+        panelTutorial11.setVisible(false);
+        panelTutorial12.setVisible(false);
+        panelTutorial13.setVisible(false);
     }
 
     /**
@@ -164,6 +180,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         Continuar.setText("Continuar");
+        Continuar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ContinuarActionPerformed(evt);
+            }
+        });
 
         descripcion.setLabelFor(titulo);
         descripcion.setText("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. ");
@@ -228,7 +249,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                         .addGap(40, 40, 40)
                         .addComponent(EscudoUDC))
                     .addComponent(descripcion))
-                .addGap(0, 171, Short.MAX_VALUE))
+                .addGap(0, 51, Short.MAX_VALUE))
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,7 +266,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(EscudoUDC)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)
@@ -1162,6 +1183,13 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     private void siguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_siguiente1ActionPerformed
+
+    private void ContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinuarActionPerformed
+
+        panelPrincipal.setVisible(false);
+        panelTutorial1.setVisible(true);
+
+    }//GEN-LAST:event_ContinuarActionPerformed
 
     /**
      * @param args the command line arguments
