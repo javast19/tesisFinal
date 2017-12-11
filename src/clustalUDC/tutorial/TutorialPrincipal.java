@@ -5,8 +5,7 @@
  */
 package clustalUDC.tutorial;
 
-import com.lowagie.text.Graphic;
-import java.awt.Graphics;
+import java.awt.event.WindowEvent;
 
 /**
  *
@@ -249,7 +248,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                         .addGap(40, 40, 40)
                         .addComponent(EscudoUDC))
                     .addComponent(descripcion))
-                .addGap(0, 51, Short.MAX_VALUE))
+                .addGap(0, 171, Short.MAX_VALUE))
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -266,7 +265,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(EscudoUDC)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrincipalLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)
@@ -287,8 +286,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         descripcion.getAccessibleContext().setAccessibleDescription("Bienvenido al sotfware de analisis y modelado 3D de la proteina TP53, ClustalUDC. A continuacion encontrara el tutorial de como usar el aplicativo, como hacer un analisis y como visualizar su modelo.");
 
         siguiente.setText("Siguiente");
+        siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguienteActionPerformed(evt);
+            }
+        });
 
         atras.setText("Atras");
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
 
         skipTutorial2.setText("Saltar Tutorial");
 
@@ -351,6 +360,11 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         });
 
         atras1.setText("Atras");
+        atras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras1ActionPerformed(evt);
+            }
+        });
 
         skipTutorial3.setText("Saltar Tutorial");
 
@@ -406,8 +420,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente2.setText("Siguiente");
+        siguiente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente2ActionPerformed(evt);
+            }
+        });
 
         atras2.setText("Atras");
+        atras2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras2ActionPerformed(evt);
+            }
+        });
 
         skipTutorial4.setText("Saltar Tutorial");
 
@@ -463,8 +487,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente3.setText("Siguiente");
+        siguiente3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente3ActionPerformed(evt);
+            }
+        });
 
         atras3.setText("Atras");
+        atras3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras3ActionPerformed(evt);
+            }
+        });
 
         skipTutorial5.setText("Saltar Tutorial");
 
@@ -520,8 +554,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente4.setText("Siguiente");
+        siguiente4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente4ActionPerformed(evt);
+            }
+        });
 
         atras4.setText("Atras");
+        atras4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras4ActionPerformed(evt);
+            }
+        });
 
         skipTutorial6.setText("Saltar Tutorial");
 
@@ -577,8 +621,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente5.setText("Siguiente");
+        siguiente5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente5ActionPerformed(evt);
+            }
+        });
 
         atras5.setText("Atras");
+        atras5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras5ActionPerformed(evt);
+            }
+        });
 
         skipTutorial7.setText("Saltar Tutorial");
 
@@ -634,8 +688,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente6.setText("Siguiente");
+        siguiente6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente6ActionPerformed(evt);
+            }
+        });
 
         atras6.setText("Atras");
+        atras6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras6ActionPerformed(evt);
+            }
+        });
 
         skipTutorial8.setText("Saltar Tutorial");
 
@@ -691,8 +755,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente7.setText("Siguiente");
+        siguiente7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente7ActionPerformed(evt);
+            }
+        });
 
         atras7.setText("Atras");
+        atras7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras7ActionPerformed(evt);
+            }
+        });
 
         skipTutorial9.setText("Saltar Tutorial");
 
@@ -748,8 +822,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente8.setText("Siguiente");
+        siguiente8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente8ActionPerformed(evt);
+            }
+        });
 
         atras8.setText("Atras");
+        atras8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras8ActionPerformed(evt);
+            }
+        });
 
         skipTutorial10.setText("Saltar Tutorial");
 
@@ -805,8 +889,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente9.setText("Siguiente");
+        siguiente9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente9ActionPerformed(evt);
+            }
+        });
 
         atras9.setText("Atras");
+        atras9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras9ActionPerformed(evt);
+            }
+        });
 
         skipTutorial11.setText("Saltar Tutorial");
 
@@ -853,7 +947,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addComponent(scrollDescription10, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
                 .addComponent(imagenTutorial10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
                 .addGroup(panelTutorial10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente9)
                     .addComponent(atras9)
@@ -862,8 +956,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente10.setText("Siguiente");
+        siguiente10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente10ActionPerformed(evt);
+            }
+        });
 
         atras10.setText("Atras");
+        atras10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras10ActionPerformed(evt);
+            }
+        });
 
         skipTutorial12.setText("Saltar Tutorial");
 
@@ -907,7 +1011,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(tituloTutorial11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scrollDescription11, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                .addComponent(scrollDescription11, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(imagenTutorial11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -919,8 +1023,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente11.setText("Siguiente");
+        siguiente11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente11ActionPerformed(evt);
+            }
+        });
 
         atras11.setText("Atras");
+        atras11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras11ActionPerformed(evt);
+            }
+        });
 
         skipTutorial13.setText("Saltar Tutorial");
 
@@ -982,8 +1096,18 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         );
 
         siguiente12.setText("Finalizar");
+        siguiente12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente12ActionPerformed(evt);
+            }
+        });
 
         atras12.setText("Atras");
+        atras12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atras12ActionPerformed(evt);
+            }
+        });
 
         skipTutorial14.setText("Saltar Tutorial");
 
@@ -1030,7 +1154,7 @@ public class TutorialPrincipal extends javax.swing.JFrame {
                 .addComponent(scrollDescription13, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addComponent(imagenTutorial13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                 .addGroup(panelTutorial13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(siguiente12)
                     .addComponent(atras12)
@@ -1177,11 +1301,17 @@ public class TutorialPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void skipTutorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipTutorialActionPerformed
-        // TODO add your handling code here:
+        
+        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_DEACTIVATED));
+        clustalUDC.vistas.Principalm a = new clustalUDC.vistas.Principalm();
+        a.setVisible(true);
+        a.setLocationRelativeTo(null); 
+        
     }//GEN-LAST:event_skipTutorialActionPerformed
 
     private void siguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente1ActionPerformed
-        // TODO add your handling code here:
+        panelTutorial2.setVisible(false);
+        panelTutorial3.setVisible(true);
     }//GEN-LAST:event_siguiente1ActionPerformed
 
     private void ContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinuarActionPerformed
@@ -1190,6 +1320,130 @@ public class TutorialPrincipal extends javax.swing.JFrame {
         panelTutorial1.setVisible(true);
 
     }//GEN-LAST:event_ContinuarActionPerformed
+
+    private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
+        panelTutorial1.setVisible(false);
+        panelTutorial2.setVisible(true);
+    }//GEN-LAST:event_siguienteActionPerformed
+
+    private void siguiente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente2ActionPerformed
+        panelTutorial3.setVisible(false);
+        panelTutorial4.setVisible(true);
+    }//GEN-LAST:event_siguiente2ActionPerformed
+
+    private void siguiente3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente3ActionPerformed
+        panelTutorial4.setVisible(false);
+        panelTutorial5.setVisible(true);
+    }//GEN-LAST:event_siguiente3ActionPerformed
+
+    private void siguiente4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente4ActionPerformed
+        panelTutorial5.setVisible(false);
+        panelTutorial6.setVisible(true);
+    }//GEN-LAST:event_siguiente4ActionPerformed
+
+    private void siguiente5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente5ActionPerformed
+        panelTutorial6.setVisible(false);
+        panelTutorial7.setVisible(true);
+    }//GEN-LAST:event_siguiente5ActionPerformed
+
+    private void siguiente6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente6ActionPerformed
+        panelTutorial7.setVisible(false);
+        panelTutorial8.setVisible(true);
+    }//GEN-LAST:event_siguiente6ActionPerformed
+
+    private void siguiente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente7ActionPerformed
+        panelTutorial8.setVisible(false);
+        panelTutorial9.setVisible(true);
+    }//GEN-LAST:event_siguiente7ActionPerformed
+
+    private void siguiente8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente8ActionPerformed
+        panelTutorial9.setVisible(false);
+        panelTutorial10.setVisible(true);
+    }//GEN-LAST:event_siguiente8ActionPerformed
+
+    private void siguiente9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente9ActionPerformed
+        panelTutorial10.setVisible(false);
+        panelTutorial11.setVisible(true);
+    }//GEN-LAST:event_siguiente9ActionPerformed
+
+    private void siguiente10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente10ActionPerformed
+        panelTutorial11.setVisible(false);
+        panelTutorial12.setVisible(true);
+    }//GEN-LAST:event_siguiente10ActionPerformed
+
+    private void siguiente11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente11ActionPerformed
+        panelTutorial12.setVisible(false);
+        panelTutorial13.setVisible(true);
+    }//GEN-LAST:event_siguiente11ActionPerformed
+
+    private void siguiente12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente12ActionPerformed
+//        JFrame.setVisible(false);
+    }//GEN-LAST:event_siguiente12ActionPerformed
+
+    private void atras12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras12ActionPerformed
+        panelTutorial13.setVisible(false);
+        panelTutorial12.setVisible(true);
+    }//GEN-LAST:event_atras12ActionPerformed
+
+    private void atras11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras11ActionPerformed
+        panelTutorial12.setVisible(false);
+        panelTutorial11.setVisible(true);
+    }//GEN-LAST:event_atras11ActionPerformed
+
+    private void atras10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras10ActionPerformed
+        panelTutorial11.setVisible(false);
+        panelTutorial10.setVisible(true);
+    }//GEN-LAST:event_atras10ActionPerformed
+
+    private void atras9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras9ActionPerformed
+        panelTutorial10.setVisible(false);
+        panelTutorial9.setVisible(true);
+    }//GEN-LAST:event_atras9ActionPerformed
+
+    private void atras8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras8ActionPerformed
+        panelTutorial9.setVisible(false);
+        panelTutorial8.setVisible(true);
+    }//GEN-LAST:event_atras8ActionPerformed
+
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        panelTutorial1.setVisible(false);
+        panelPrincipal.setVisible(true);
+    }//GEN-LAST:event_atrasActionPerformed
+
+    private void atras7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras7ActionPerformed
+        panelTutorial8.setVisible(false);
+        panelTutorial7.setVisible(true);
+    }//GEN-LAST:event_atras7ActionPerformed
+
+    private void atras6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras6ActionPerformed
+        panelTutorial7.setVisible(false);
+        panelTutorial6.setVisible(true);
+    }//GEN-LAST:event_atras6ActionPerformed
+
+    private void atras5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras5ActionPerformed
+        panelTutorial6.setVisible(false);
+        panelTutorial5.setVisible(true);
+    }//GEN-LAST:event_atras5ActionPerformed
+
+    private void atras4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras4ActionPerformed
+        panelTutorial5.setVisible(false);
+        panelTutorial4.setVisible(true);
+    }//GEN-LAST:event_atras4ActionPerformed
+
+    private void atras3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras3ActionPerformed
+        panelTutorial4.setVisible(false);
+        panelTutorial3.setVisible(true);
+    }//GEN-LAST:event_atras3ActionPerformed
+
+    private void atras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras2ActionPerformed
+        panelTutorial3.setVisible(false);
+        panelTutorial2.setVisible(true);
+    }//GEN-LAST:event_atras2ActionPerformed
+
+    private void atras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atras1ActionPerformed
+        panelTutorial2.setVisible(false);
+        panelTutorial1.setVisible(true);
+    }//GEN-LAST:event_atras1ActionPerformed
 
     /**
      * @param args the command line arguments
