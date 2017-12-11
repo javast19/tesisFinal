@@ -91,6 +91,13 @@
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
+          <Group type="103" rootIndex="11" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelTutorial11" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -159,6 +166,13 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="panelTutorial10" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+          <Group type="103" rootIndex="11" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelTutorial11" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -1357,10 +1371,10 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="tituloTutorial10" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="scrollDescription10" min="-2" pref="101" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="scrollDescription10" min="-2" pref="118" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="imagenTutorial10" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="110" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="siguiente9" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="atras9" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1392,7 +1406,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Comparar resultados"/>
+            <Property name="text" type="java.lang.String" value="Modelo 3D de la prote&#xed;na mutada"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JScrollPane" name="scrollDescription10">
@@ -1409,7 +1423,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Para realizar la comparaci&#xf3;n con la base de datos de otros estudios &#xa;relacionados con la prote&#xed;na p53 se deben realizar los siguientes pasos:&#xa;1. Desde la interfaz de lobby se presiona en el men&#xfa; de la parte &#xa;superior, el bot&#xf3;n Acci&#xf3;n -&gt; Comparar Resultados.&#xa;2. Aparece una nueva ventana con la informaci&#xf3;n encontrada."/>
+                <Property name="text" type="java.lang.String" value="Para ver el modelo 3D se deben seguir los siguientes pasos:&#xa;1. Desde la interfaz de lobby (figura 3) se presiona en el men&#xfa; de &#xa;la parte superior, el bot&#xf3;n Acci&#xf3;n -&gt; Modelo 3D -&gt; Mutaci&#xf3;n.&#xa;2. Aparecen dos ventanas con los modelos de la prote&#xed;na p53 resaltando &#xa;la posici&#xf3;n donde se presenta la mutaci&#xf3;n (un modelo en la estructura &#xa;primaria y otro en la estructura secundaria)."/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                     <LineBorder roundedCorners="true" thickness="0">
@@ -1427,7 +1441,117 @@
         <Component class="javax.swing.JLabel" name="imagenTutorial10">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/clustalUDC/src/Tabla-De-Resultados.png"/>
+              <Image iconType="3" name="/clustalUDC/src/Modelo-3D.png"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelTutorial11">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="skipTutorial12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="atras10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="siguiente10" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="scrollDescription11" alignment="0" max="32767" attributes="0"/>
+                              <Component id="tituloTutorial11" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imagenTutorial11" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="tituloTutorial11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="scrollDescription11" min="-2" pref="101" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="imagenTutorial11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="siguiente10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="atras10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="skipTutorial12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="siguiente10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Siguiente"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="atras10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atras"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="skipTutorial12">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Saltar Tutorial"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="tituloTutorial11">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lobby"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="scrollDescription11">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="descriptionTutorial11">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="f0" green="f0" red="f0" type="rgb"/>
+                </Property>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Al iniciar el programa se presentara una vista con tres secciones donde&#xa;se muestra informaci&#xf3;n. se encuentra una barra con opciones de menu con &#xa;la que se puede interactuar con las distintas funciones del sistema y &#xa;el logo de la universidad de Cartagena que despliega una descripcion de&#xa;la investigaci&#xf3;n."/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder roundedCorners="true" thickness="0">
+                      <Color PropertyName="color" blue="f0" green="f0" red="f0" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[190, 94]"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="imagenTutorial11">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/clustalUDC/src/Lobby.png"/>
             </Property>
           </Properties>
         </Component>
